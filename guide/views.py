@@ -5,7 +5,7 @@ from django.conf import settings
 GEMINI_API_KEY = settings.GEMINI_API_KEY
 
 def index(request):
-    return render(request, 'guide/index.html')
+    return render(request, 'guide/index.html', {'geminiApiKey': GEMINI_API_KEY})
 
 def process(request):
     # Fancy name: The Election Engine
