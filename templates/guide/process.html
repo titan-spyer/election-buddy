@@ -22,6 +22,41 @@
     <h2>5. Results (The New Leader)</h2>
     <p>The person who gets the most votes wins! They become the new leader and start working on their promises.</p>
 
+    <div class="manifesto-section" style="margin-top: 40px; background: rgba(255, 255, 255, 0.05); padding: 25px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
+        <h2 style="margin-top: 0;">📜 Party Manifestos</h2>
+        <p>A manifesto is a document where a political party lists all the promises they will fulfill if they win. Click on any party to visit their official website and read their manifesto directly from their platform:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px;">
+            <!-- BJP -->
+            <div style="padding: 15px; border-radius: 10px; background: rgba(255, 153, 51, 0.05); border: 1px solid rgba(255, 153, 51, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <h3 style="color: #ff9933; margin-bottom: 15px; font-size: 1.2rem;">Bharatiya Janata Party (BJP)</h3>
+                <a href="https://www.bjp.org" target="_blank" style="display: block; margin-bottom: 8px; color: var(--text-color); text-decoration: none;">🌐 Official Website</a>
+                <a href="https://www.bjp.org/manifesto" target="_blank" style="display: block; color: var(--text-color); text-decoration: none;">📖 Read Manifesto</a>
+            </div>
+            
+            <!-- INC -->
+            <div style="padding: 15px; border-radius: 10px; background: rgba(0, 153, 255, 0.05); border: 1px solid rgba(0, 153, 255, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <h3 style="color: #0099ff; margin-bottom: 15px; font-size: 1.2rem;">Indian National Congress (INC)</h3>
+                <a href="https://inc.in" target="_blank" style="display: block; margin-bottom: 8px; color: var(--text-color); text-decoration: none;">🌐 Official Website</a>
+                <a href="https://manifesto.inc.in" target="_blank" style="display: block; color: var(--text-color); text-decoration: none;">📖 Read Manifesto</a>
+            </div>
+
+            <!-- AAP -->
+            <div style="padding: 15px; border-radius: 10px; background: rgba(0, 204, 102, 0.05); border: 1px solid rgba(0, 204, 102, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <h3 style="color: #00cc66; margin-bottom: 15px; font-size: 1.2rem;">Aam Aadmi Party (AAP)</h3>
+                <a href="https://aamaadmiparty.org" target="_blank" style="display: block; margin-bottom: 8px; color: var(--text-color); text-decoration: none;">🌐 Official Website</a>
+                <a href="https://aamaadmiparty.org/manifesto" target="_blank" style="display: block; color: var(--text-color); text-decoration: none;">📖 Read Manifesto</a>
+            </div>
+
+            <!-- CPI(M) -->
+            <div style="padding: 15px; border-radius: 10px; background: rgba(255, 51, 51, 0.05); border: 1px solid rgba(255, 51, 51, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <h3 style="color: #ff3333; margin-bottom: 15px; font-size: 1.2rem;">Communist Party of India (Marxist)</h3>
+                <a href="https://cpim.org" target="_blank" style="display: block; margin-bottom: 8px; color: var(--text-color); text-decoration: none;">🌐 Official Website</a>
+                <a href="https://cpim.org/manifestos" target="_blank" style="display: block; color: var(--text-color); text-decoration: none;">📖 Read Manifesto</a>
+            </div>
+        </div>
+    </div>
+
     <div style="text-align: center; margin-top: 30px;">
         <a href="{% url 'timeline' %}" class="actionBtn">Next: See The Timeline ➔</a>
     </div>
