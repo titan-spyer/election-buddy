@@ -18,4 +18,5 @@ COPY . .
 RUN python manage.py collectstatic --noinput
 
 # Run the web service on container startup using Gunicorn
-CMD exec gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 0 election_project.wsgi:application
+# This will automatically migrate the database and load data.json on deployment
+CMD python manage.py migrate && python manage.py loaddata data.json && exec gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 0 election_project.wsgi:application

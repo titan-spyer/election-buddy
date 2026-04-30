@@ -1,0 +1,127 @@
+{% extends 'guide/base.html' %}
+{% load static %}
+
+{% block title %}Find Your Constituency{% endblock %}
+
+{% block content %}
+<section class="hero glass-panel">
+    <h1>Find Your <span class="highlight">Constituency</span></h1>
+    <p>Select your state and district to view your assembly and parliamentary constituencies.</p>
+</section>
+
+<section class="content-section">
+    <div class="glass-panel" style="padding: 2rem; border-radius: 20px;">
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="stateSelect" style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: var(--text-color);">Select State</label>
+            <select id="stateSelect" class="chatInput" style="width: 100%; max-width: 400px; cursor: pointer;">
+                <option value="">-- Choose State --</option>
+                {% for state in states %}
+                <option value="{{ state.id }}">{{ state.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="districtSelect" style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: var(--text-color);">Select District</label>
+            <select id="districtSelect" class="chatInput" style="width: 100%; max-width: 400px; cursor: pointer;" disabled>
+                <option value="">-- Choose District --</option>
+            </select>
+        </div>
+
+        <div id="resultsArea" style="margin-top: 2rem; display: none;">
+            <h3 style="margin-bottom: 1rem; color: var(--text-color);">Constituencies in this District:</h3>
+            <div id="constituencyList" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
+                <!-- Results will be injected here -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const stateSelect = document.getElementById('stateSelect');
+        const districtSelect = document.getElementById('districtSelect');
+        const resultsArea = document.getElementById('resultsArea');
+        const constituencyList = document.getElementById('constituencyList');
+
+        stateSelect.addEventListener('change', async function() {
+            const stateId = this.value;
+            
+            // Reset downstream inputs
+            districtSelect.innerHTML = '<option value="">-- Choose District --</option>';
+            districtSelect.disabled = true;
+            resultsArea.style.display = 'none';
+
+            if (!stateId) return;
+
+            try {
+                const response = await fetch(`/api/districts/?state_id=${stateId}`);
+                const data = await response.json();
+
+                if (data.length > 0) {
+                    data.forEach(district => {
+                        const option = document.createElement('option');
+                        option.value = district.id;
+                        option.textContent = district.name;
+                        districtSelect.appendChild(option);
+                    });
+                    districtSelect.disabled = false;
+                }
+            } catch (error) {
+                console.error('Error fetching districts:', error);
+            }
+        });
+
+        districtSelect.addEventListener('change', async function() {
+            const districtId = this.value;
+            
+            // Reset downstream inputs
+            constituencyList.innerHTML = '';
+            resultsArea.style.display = 'none';
+
+            if (!districtId) return;
+
+            try {
+                const response = await fetch(`/api/constituencies/?district_id=${districtId}`);
+                const data = await response.json();
+
+                if (data.length > 0) {
+                    data.forEach(constituency => {
+                        const card = document.createElement('div');
+                        card.style.padding = '1rem';
+                        card.style.borderRadius = '10px';
+                        card.style.background = 'rgba(255, 255, 255, 0.05)';
+                        card.style.border = '1px solid rgba(255, 255, 255, 0.1)';
+                        
+                        const name = document.createElement('strong');
+                        name.style.display = 'block';
+                        name.style.fontSize = '1.1rem';
+                        name.style.color = 'var(--text-color)';
+                        name.textContent = constituency.name;
+
+                        const type = document.createElement('span');
+                        type.style.display = 'inline-block';
+                        type.style.marginTop = '0.5rem';
+                        type.style.padding = '0.2rem 0.5rem';
+                        type.style.borderRadius = '5px';
+                        type.style.fontSize = '0.85rem';
+                        type.style.background = constituency.constituency_type === 'Assembly' ? 'rgba(74, 144, 226, 0.2)' : 'rgba(245, 166, 35, 0.2)';
+                        type.style.color = constituency.constituency_type === 'Assembly' ? '#4a90e2' : '#f5a623';
+                        type.textContent = constituency.constituency_type;
+
+                        card.appendChild(name);
+                        card.appendChild(type);
+                        constituencyList.appendChild(card);
+                    });
+                    resultsArea.style.display = 'block';
+                } else {
+                    constituencyList.innerHTML = '<p style="color: var(--text-color);">No constituencies found for this district.</p>';
+                    resultsArea.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error fetching constituencies:', error);
+            }
+        });
+    });
+</script>
+{% endblock %}
