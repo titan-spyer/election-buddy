@@ -1,0 +1,29 @@
+{% extends 'guide/base.html' %}
+
+{% block title %}Process{% endblock %}
+
+{% block content %}
+<div class="glassCard">
+    <h1>⚙️ Process</h1>
+    <p>Think of an election like choosing a captain for a team. Everyone gets a say, and the person with the most support gets to lead and make decisions for the group.</p>
+    
+    <h2>1. Nominations (Raising Hands)</h2>
+    <p>First, people who want to be leaders step forward. They tell the public what they plan to do if they win.</p>
+
+    <h2>2. Campaigns (Sharing Ideas)</h2>
+    <p>The candidates travel around and talk to people. They use posters, TV, and rallies to share their promises.</p>
+
+    <h2>3. Voting (Your Turn)</h2>
+    <p>This is the most important part! On election day, you go to a booth and secretly choose your favorite candidate. Your choice is private.</p>
+
+    <h2>4. Counting (Tallying Up)</h2>
+    <p>After everyone finishes, officials count all the votes carefully. It's like adding up points in a game.</p>
+
+    <h2>5. Results (The New Leader)</h2>
+    <p>The person who gets the most votes wins! They become the new leader and start working on their promises.</p>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="{% url 'timeline' %}" class="actionBtn">Next: See The Timeline ➔</a>
+    </div>
+</div>
+{% endblock %}

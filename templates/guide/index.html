@@ -1,0 +1,31 @@
+{% extends 'guide/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="glassCard" style="text-align: center;">
+    <h1>Welcome to Election Buddy</h1>
+    <p>Your friendly guide to understanding how elections work. We believe everyone has a right to know how to choose their leaders easily.</p>
+    <div style="margin-top: 30px;">
+        <a href="{% url 'process' %}" class="actionBtn">Learn the Process</a>
+    </div>
+</div>
+
+<div class="stepGrid" style="max-width: 800px;">
+    <div class="glassCard stepCard">
+        <h2>🗳️ The Process</h2>
+        <p>Understand the core mechanics of how votes become voices.</p>
+        <a href="{% url 'process' %}" class="actionBtn">Explore</a>
+    </div>
+    <div class="glassCard stepCard">
+        <h2>⏳ Timeline</h2>
+        <p>See the journey from announcing the election to the final results.</p>
+        <a href="{% url 'timeline' %}" class="actionBtn">View</a>
+    </div>
+    <div class="glassCard stepCard">
+        <h2>👣 Steps</h2>
+        <p>A simple step-by-step guide to casting your valuable vote.</p>
+        <a href="{% url 'steps' %}" class="actionBtn">Start</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,381 @@
+/* Modern, clean, and interactive CSS */
+:root {
+    --primaryColor: #00b894;
+    /* Mint green */
+    --secondaryColor: #fdcb6e;
+    /* Warm yellow */
+    --backgroundColor: #f5f6fa;
+    --textColor: #2d3436;
+    --cardBg: rgba(255, 255, 255, 0.9);
+    --glassBorder: rgba(255, 255, 255, 0.5);
+    --shadowSoft: 0 8px 32px 0 rgba(0, 184, 148, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+    color: var(--textColor);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: var(--cardBg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glassBorder);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+.logoImg {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: var(--primaryColor);
+}
+
+.mainContent {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glassCard {
+    background: var(--cardBg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid var(--glassBorder);
+    box-shadow: var(--shadowSoft);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.glassCard:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--primaryColor);
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.actionBtn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--primaryColor), var(--secondaryColor));
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
+}
+
+.actionBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.6);
+}
+
+/* Help Popup Styles */
+.helpBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--primaryColor);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.helpBtn:hover {
+    transform: scale(1.1);
+}
+
+.helpPopup {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    background: var(--cardBg);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid var(--glassBorder);
+    box-shadow: var(--shadowSoft);
+    padding: 20px;
+    z-index: 999;
+    flex-direction: column;
+}
+
+.helpPopup.active {
+    display: flex;
+    animation: slideUp 0.3s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.helpHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.helpHeader h3 {
+    margin: 0;
+    color: var(--primaryColor);
+}
+
+.closeBtn {
+    cursor: pointer;
+    font-weight: bold;
+    color: #888;
+}
+
+.closeBtn:hover {
+    color: #333;
+}
+
+.aiChatBox {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chatMsg {
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    max-width: 80%;
+}
+
+.msgAi {
+    background: #e1f5fe;
+    align-self: flex-start;
+    color: #0277bd;
+}
+
+.msgUser {
+    background: var(--primaryColor);
+    color: white;
+    align-self: flex-end;
+}
+
+.chatInputArea {
+    display: flex;
+    gap: 10px;
+}
+
+.chatInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.chatSendBtn {
+    padding: 10px 15px;
+    background: var(--primaryColor);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Timeline specific */
+.timelineContainer {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timelineContainer::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--primaryColor);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 3px;
+}
+
+.timelineItem {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timelineItem::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: white;
+    border: 4px solid var(--secondaryColor);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -10px;
+}
+
+.timelineContent {
+    padding: 20px;
+    background-color: var(--cardBg);
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Steps specific */
+.stepGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.stepCard {
+    text-align: center;
+    padding: 30px;
+}
+
+.stepNumber {
+    width: 50px;
+    height: 50px;
+    background: var(--primaryColor);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+}
+
+@media (max-width: 768px) {
+    .timelineContainer::after {
+        left: 31px;
+    }
+
+    .timelineItem {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timelineItem::after {
+        left: 21px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .navLinks {
+        display: none;
+        /* simple mobile handling */
+    }
+}

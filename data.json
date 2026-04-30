@@ -1,0 +1,6745 @@
+[
+  {
+    "model": "guide.state",
+    "pk": 1,
+    "fields": {
+      "name": "Andhra Pradesh"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 1,
+    "fields": {
+      "state": 1,
+      "name": "Anantapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 2,
+    "fields": {
+      "state": 1,
+      "name": "Chittoor",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 3,
+    "fields": {
+      "state": 1,
+      "name": "East Godavari",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 4,
+    "fields": {
+      "state": 1,
+      "name": "Guntur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 5,
+    "fields": {
+      "state": 1,
+      "name": "Krishna",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 6,
+    "fields": {
+      "state": 1,
+      "name": "Kurnool",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 7,
+    "fields": {
+      "state": 1,
+      "name": "Nellore",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 8,
+    "fields": {
+      "state": 1,
+      "name": "Prakasam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 9,
+    "fields": {
+      "state": 1,
+      "name": "Srikakulam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 10,
+    "fields": {
+      "state": 1,
+      "name": "Visakhapatnam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 11,
+    "fields": {
+      "state": 1,
+      "name": "Vizianagaram",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 12,
+    "fields": {
+      "state": 1,
+      "name": "West Godavari",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 13,
+    "fields": {
+      "state": 1,
+      "name": "YSR Kadapa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 2,
+    "fields": {
+      "name": "Arunachal Pradesh"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 14,
+    "fields": {
+      "state": 2,
+      "name": "Tawang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 15,
+    "fields": {
+      "state": 2,
+      "name": "West Kameng",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 16,
+    "fields": {
+      "state": 2,
+      "name": "East Kameng",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 17,
+    "fields": {
+      "state": 2,
+      "name": "Papum Pare",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 18,
+    "fields": {
+      "state": 2,
+      "name": "Kurung Kumey",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 19,
+    "fields": {
+      "state": 2,
+      "name": "Kra Daadi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 20,
+    "fields": {
+      "state": 2,
+      "name": "Lower Subansiri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 21,
+    "fields": {
+      "state": 2,
+      "name": "Upper Subansiri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 22,
+    "fields": {
+      "state": 2,
+      "name": "West Siang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 23,
+    "fields": {
+      "state": 2,
+      "name": "East Siang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 24,
+    "fields": {
+      "state": 2,
+      "name": "Siang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 25,
+    "fields": {
+      "state": 2,
+      "name": "Upper Siang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 26,
+    "fields": {
+      "state": 2,
+      "name": "Lower Siang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 27,
+    "fields": {
+      "state": 2,
+      "name": "Lower Dibang Valley",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 28,
+    "fields": {
+      "state": 2,
+      "name": "Dibang Valley",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 29,
+    "fields": {
+      "state": 2,
+      "name": "Anjaw",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 30,
+    "fields": {
+      "state": 2,
+      "name": "Lohit",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 31,
+    "fields": {
+      "state": 2,
+      "name": "Namsai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 32,
+    "fields": {
+      "state": 2,
+      "name": "Changlang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 33,
+    "fields": {
+      "state": 2,
+      "name": "Tirap",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 34,
+    "fields": {
+      "state": 2,
+      "name": "Longding",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 3,
+    "fields": {
+      "name": "Assam"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 35,
+    "fields": {
+      "state": 3,
+      "name": "Baksa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 36,
+    "fields": {
+      "state": 3,
+      "name": "Barpeta",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 37,
+    "fields": {
+      "state": 3,
+      "name": "Biswanath",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 38,
+    "fields": {
+      "state": 3,
+      "name": "Bongaigaon",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 39,
+    "fields": {
+      "state": 3,
+      "name": "Cachar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 40,
+    "fields": {
+      "state": 3,
+      "name": "Charaideo",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 41,
+    "fields": {
+      "state": 3,
+      "name": "Chirang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 42,
+    "fields": {
+      "state": 3,
+      "name": "Darrang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 43,
+    "fields": {
+      "state": 3,
+      "name": "Dhemaji",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 44,
+    "fields": {
+      "state": 3,
+      "name": "Dhubri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 45,
+    "fields": {
+      "state": 3,
+      "name": "Dibrugarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 46,
+    "fields": {
+      "state": 3,
+      "name": "Goalpara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 47,
+    "fields": {
+      "state": 3,
+      "name": "Golaghat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 48,
+    "fields": {
+      "state": 3,
+      "name": "Hailakandi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 49,
+    "fields": {
+      "state": 3,
+      "name": "Hojai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 50,
+    "fields": {
+      "state": 3,
+      "name": "Jorhat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 51,
+    "fields": {
+      "state": 3,
+      "name": "Kamrup Metropolitan",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 52,
+    "fields": {
+      "state": 3,
+      "name": "Kamrup",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 53,
+    "fields": {
+      "state": 3,
+      "name": "Karbi Anglong",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 54,
+    "fields": {
+      "state": 3,
+      "name": "Karimganj",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 55,
+    "fields": {
+      "state": 3,
+      "name": "Kokrajhar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 56,
+    "fields": {
+      "state": 3,
+      "name": "Lakhimpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 57,
+    "fields": {
+      "state": 3,
+      "name": "Majuli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 58,
+    "fields": {
+      "state": 3,
+      "name": "Morigaon",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 59,
+    "fields": {
+      "state": 3,
+      "name": "Nagaon",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 60,
+    "fields": {
+      "state": 3,
+      "name": "Nalbari",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 61,
+    "fields": {
+      "state": 3,
+      "name": "Dima Hasao",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 62,
+    "fields": {
+      "state": 3,
+      "name": "Sivasagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 63,
+    "fields": {
+      "state": 3,
+      "name": "Sonitpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 64,
+    "fields": {
+      "state": 3,
+      "name": "South Salmara-Mankachar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 65,
+    "fields": {
+      "state": 3,
+      "name": "Tinsukia",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 66,
+    "fields": {
+      "state": 3,
+      "name": "Udalguri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 67,
+    "fields": {
+      "state": 3,
+      "name": "West Karbi Anglong",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 4,
+    "fields": {
+      "name": "Bihar"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 68,
+    "fields": {
+      "state": 4,
+      "name": "Araria",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 69,
+    "fields": {
+      "state": 4,
+      "name": "Arwal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 70,
+    "fields": {
+      "state": 4,
+      "name": "Aurangabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 71,
+    "fields": {
+      "state": 4,
+      "name": "Banka",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 72,
+    "fields": {
+      "state": 4,
+      "name": "Begusarai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 73,
+    "fields": {
+      "state": 4,
+      "name": "Bhagalpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 74,
+    "fields": {
+      "state": 4,
+      "name": "Bhojpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 75,
+    "fields": {
+      "state": 4,
+      "name": "Buxar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 76,
+    "fields": {
+      "state": 4,
+      "name": "Darbhanga",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 77,
+    "fields": {
+      "state": 4,
+      "name": "East Champaran (Motihari)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 78,
+    "fields": {
+      "state": 4,
+      "name": "Gaya",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 79,
+    "fields": {
+      "state": 4,
+      "name": "Gopalganj",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 80,
+    "fields": {
+      "state": 4,
+      "name": "Jamui",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 81,
+    "fields": {
+      "state": 4,
+      "name": "Jehanabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 82,
+    "fields": {
+      "state": 4,
+      "name": "Kaimur (Bhabua)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 83,
+    "fields": {
+      "state": 4,
+      "name": "Katihar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 84,
+    "fields": {
+      "state": 4,
+      "name": "Khagaria",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 85,
+    "fields": {
+      "state": 4,
+      "name": "Kishanganj",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 86,
+    "fields": {
+      "state": 4,
+      "name": "Lakhisarai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 87,
+    "fields": {
+      "state": 4,
+      "name": "Madhepura",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 88,
+    "fields": {
+      "state": 4,
+      "name": "Madhubani",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 89,
+    "fields": {
+      "state": 4,
+      "name": "Munger (Monghyr)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 90,
+    "fields": {
+      "state": 4,
+      "name": "Muzaffarpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 91,
+    "fields": {
+      "state": 4,
+      "name": "Nalanda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 92,
+    "fields": {
+      "state": 4,
+      "name": "Nawada",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 93,
+    "fields": {
+      "state": 4,
+      "name": "Patna",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 94,
+    "fields": {
+      "state": 4,
+      "name": "Purnia (Purnea)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 95,
+    "fields": {
+      "state": 4,
+      "name": "Rohtas",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 96,
+    "fields": {
+      "state": 4,
+      "name": "Saharsa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 97,
+    "fields": {
+      "state": 4,
+      "name": "Samastipur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 98,
+    "fields": {
+      "state": 4,
+      "name": "Saran",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 99,
+    "fields": {
+      "state": 4,
+      "name": "Sheikhpura",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 100,
+    "fields": {
+      "state": 4,
+      "name": "Sheohar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 101,
+    "fields": {
+      "state": 4,
+      "name": "Sitamarhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 102,
+    "fields": {
+      "state": 4,
+      "name": "Siwan",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 103,
+    "fields": {
+      "state": 4,
+      "name": "Supaul",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 104,
+    "fields": {
+      "state": 4,
+      "name": "Vaishali",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 105,
+    "fields": {
+      "state": 4,
+      "name": "West Champaran",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 5,
+    "fields": {
+      "name": "Chandigarh (UT)"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 106,
+    "fields": {
+      "state": 5,
+      "name": "Chandigarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 6,
+    "fields": {
+      "name": "Chhattisgarh"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 107,
+    "fields": {
+      "state": 6,
+      "name": "Balod",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 108,
+    "fields": {
+      "state": 6,
+      "name": "Baloda Bazar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 109,
+    "fields": {
+      "state": 6,
+      "name": "Balrampur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 110,
+    "fields": {
+      "state": 6,
+      "name": "Bastar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 111,
+    "fields": {
+      "state": 6,
+      "name": "Bemetara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 112,
+    "fields": {
+      "state": 6,
+      "name": "Bijapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 113,
+    "fields": {
+      "state": 6,
+      "name": "Bilaspur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 114,
+    "fields": {
+      "state": 6,
+      "name": "Dantewada (South Bastar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 115,
+    "fields": {
+      "state": 6,
+      "name": "Dhamtari",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 116,
+    "fields": {
+      "state": 6,
+      "name": "Durg",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 117,
+    "fields": {
+      "state": 6,
+      "name": "Gariyaband",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 118,
+    "fields": {
+      "state": 6,
+      "name": "Janjgir-Champa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 119,
+    "fields": {
+      "state": 6,
+      "name": "Jashpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 120,
+    "fields": {
+      "state": 6,
+      "name": "Kabirdham (Kawardha)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 121,
+    "fields": {
+      "state": 6,
+      "name": "Kanker (North Bastar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 122,
+    "fields": {
+      "state": 6,
+      "name": "Kondagaon",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 123,
+    "fields": {
+      "state": 6,
+      "name": "Korba",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 124,
+    "fields": {
+      "state": 6,
+      "name": "Korea (Koriya)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 125,
+    "fields": {
+      "state": 6,
+      "name": "Mahasamund",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 126,
+    "fields": {
+      "state": 6,
+      "name": "Mungeli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 127,
+    "fields": {
+      "state": 6,
+      "name": "Narayanpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 128,
+    "fields": {
+      "state": 6,
+      "name": "Raigarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 129,
+    "fields": {
+      "state": 6,
+      "name": "Raipur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 130,
+    "fields": {
+      "state": 6,
+      "name": "Rajnandgaon",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 131,
+    "fields": {
+      "state": 6,
+      "name": "Sukma",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 132,
+    "fields": {
+      "state": 6,
+      "name": "Surajpur  ",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 133,
+    "fields": {
+      "state": 6,
+      "name": "Surguja",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 7,
+    "fields": {
+      "name": "Dadra and Nagar Haveli (UT)"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 134,
+    "fields": {
+      "state": 7,
+      "name": "Dadra & Nagar Haveli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 8,
+    "fields": {
+      "name": "Daman and Diu (UT)"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 135,
+    "fields": {
+      "state": 8,
+      "name": "Daman",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 136,
+    "fields": {
+      "state": 8,
+      "name": "Diu",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 9,
+    "fields": {
+      "name": "Delhi (NCT)"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 137,
+    "fields": {
+      "state": 9,
+      "name": "Central Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 138,
+    "fields": {
+      "state": 9,
+      "name": "East Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 139,
+    "fields": {
+      "state": 9,
+      "name": "New Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 140,
+    "fields": {
+      "state": 9,
+      "name": "North Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 141,
+    "fields": {
+      "state": 9,
+      "name": "North East  Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 142,
+    "fields": {
+      "state": 9,
+      "name": "North West  Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 143,
+    "fields": {
+      "state": 9,
+      "name": "Shahdara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 144,
+    "fields": {
+      "state": 9,
+      "name": "South Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 145,
+    "fields": {
+      "state": 9,
+      "name": "South East Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 146,
+    "fields": {
+      "state": 9,
+      "name": "South West  Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 147,
+    "fields": {
+      "state": 9,
+      "name": "West Delhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 10,
+    "fields": {
+      "name": "Goa"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 148,
+    "fields": {
+      "state": 10,
+      "name": "North Goa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 149,
+    "fields": {
+      "state": 10,
+      "name": "South Goa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 11,
+    "fields": {
+      "name": "Gujarat"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 150,
+    "fields": {
+      "state": 11,
+      "name": "Ahmedabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 151,
+    "fields": {
+      "state": 11,
+      "name": "Amreli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 152,
+    "fields": {
+      "state": 11,
+      "name": "Anand",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 153,
+    "fields": {
+      "state": 11,
+      "name": "Aravalli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 154,
+    "fields": {
+      "state": 11,
+      "name": "Banaskantha (Palanpur)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 155,
+    "fields": {
+      "state": 11,
+      "name": "Bharuch",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 156,
+    "fields": {
+      "state": 11,
+      "name": "Bhavnagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 157,
+    "fields": {
+      "state": 11,
+      "name": "Botad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 158,
+    "fields": {
+      "state": 11,
+      "name": "Chhota Udepur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 159,
+    "fields": {
+      "state": 11,
+      "name": "Dahod",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 160,
+    "fields": {
+      "state": 11,
+      "name": "Dangs (Ahwa)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 161,
+    "fields": {
+      "state": 11,
+      "name": "Devbhoomi Dwarka",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 162,
+    "fields": {
+      "state": 11,
+      "name": "Gandhinagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 163,
+    "fields": {
+      "state": 11,
+      "name": "Gir Somnath",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 164,
+    "fields": {
+      "state": 11,
+      "name": "Jamnagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 165,
+    "fields": {
+      "state": 11,
+      "name": "Junagadh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 166,
+    "fields": {
+      "state": 11,
+      "name": "Kachchh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 167,
+    "fields": {
+      "state": 11,
+      "name": "Kheda (Nadiad)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 168,
+    "fields": {
+      "state": 11,
+      "name": "Mahisagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 169,
+    "fields": {
+      "state": 11,
+      "name": "Mehsana",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 170,
+    "fields": {
+      "state": 11,
+      "name": "Morbi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 171,
+    "fields": {
+      "state": 11,
+      "name": "Narmada (Rajpipla)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 172,
+    "fields": {
+      "state": 11,
+      "name": "Navsari",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 173,
+    "fields": {
+      "state": 11,
+      "name": "Panchmahal (Godhra)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 174,
+    "fields": {
+      "state": 11,
+      "name": "Patan",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 175,
+    "fields": {
+      "state": 11,
+      "name": "Porbandar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 176,
+    "fields": {
+      "state": 11,
+      "name": "Rajkot",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 177,
+    "fields": {
+      "state": 11,
+      "name": "Sabarkantha (Himmatnagar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 178,
+    "fields": {
+      "state": 11,
+      "name": "Surat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 179,
+    "fields": {
+      "state": 11,
+      "name": "Surendranagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 180,
+    "fields": {
+      "state": 11,
+      "name": "Tapi (Vyara)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 181,
+    "fields": {
+      "state": 11,
+      "name": "Vadodara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 182,
+    "fields": {
+      "state": 11,
+      "name": "Valsad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 12,
+    "fields": {
+      "name": "Haryana"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 183,
+    "fields": {
+      "state": 12,
+      "name": "Ambala",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 184,
+    "fields": {
+      "state": 12,
+      "name": "Bhiwani",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 185,
+    "fields": {
+      "state": 12,
+      "name": "Charkhi Dadri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 186,
+    "fields": {
+      "state": 12,
+      "name": "Faridabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 187,
+    "fields": {
+      "state": 12,
+      "name": "Fatehabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 188,
+    "fields": {
+      "state": 12,
+      "name": "Gurgaon",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 189,
+    "fields": {
+      "state": 12,
+      "name": "Hisar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 190,
+    "fields": {
+      "state": 12,
+      "name": "Jhajjar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 191,
+    "fields": {
+      "state": 12,
+      "name": "Jind",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 192,
+    "fields": {
+      "state": 12,
+      "name": "Kaithal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 193,
+    "fields": {
+      "state": 12,
+      "name": "Karnal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 194,
+    "fields": {
+      "state": 12,
+      "name": "Kurukshetra",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 195,
+    "fields": {
+      "state": 12,
+      "name": "Mahendragarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 196,
+    "fields": {
+      "state": 12,
+      "name": "Mewat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 197,
+    "fields": {
+      "state": 12,
+      "name": "Palwal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 198,
+    "fields": {
+      "state": 12,
+      "name": "Panchkula",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 199,
+    "fields": {
+      "state": 12,
+      "name": "Panipat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 200,
+    "fields": {
+      "state": 12,
+      "name": "Rewari",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 201,
+    "fields": {
+      "state": 12,
+      "name": "Rohtak",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 202,
+    "fields": {
+      "state": 12,
+      "name": "Sirsa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 203,
+    "fields": {
+      "state": 12,
+      "name": "Sonipat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 204,
+    "fields": {
+      "state": 12,
+      "name": "Yamunanagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 13,
+    "fields": {
+      "name": "Himachal Pradesh"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 205,
+    "fields": {
+      "state": 13,
+      "name": "Bilaspur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 206,
+    "fields": {
+      "state": 13,
+      "name": "Chamba",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 207,
+    "fields": {
+      "state": 13,
+      "name": "Hamirpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 208,
+    "fields": {
+      "state": 13,
+      "name": "Kangra",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 209,
+    "fields": {
+      "state": 13,
+      "name": "Kinnaur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 210,
+    "fields": {
+      "state": 13,
+      "name": "Kullu",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 211,
+    "fields": {
+      "state": 13,
+      "name": "Lahaul &amp; Spiti",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 212,
+    "fields": {
+      "state": 13,
+      "name": "Mandi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 213,
+    "fields": {
+      "state": 13,
+      "name": "Shimla",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 214,
+    "fields": {
+      "state": 13,
+      "name": "Sirmaur (Sirmour)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 215,
+    "fields": {
+      "state": 13,
+      "name": "Solan",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 216,
+    "fields": {
+      "state": 13,
+      "name": "Una",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 14,
+    "fields": {
+      "name": "Jammu and Kashmir"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 217,
+    "fields": {
+      "state": 14,
+      "name": "Anantnag",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 218,
+    "fields": {
+      "state": 14,
+      "name": "Bandipore",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 219,
+    "fields": {
+      "state": 14,
+      "name": "Baramulla",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 220,
+    "fields": {
+      "state": 14,
+      "name": "Budgam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 221,
+    "fields": {
+      "state": 14,
+      "name": "Doda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 222,
+    "fields": {
+      "state": 14,
+      "name": "Ganderbal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 223,
+    "fields": {
+      "state": 14,
+      "name": "Jammu",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 224,
+    "fields": {
+      "state": 14,
+      "name": "Kargil",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 225,
+    "fields": {
+      "state": 14,
+      "name": "Kathua",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 226,
+    "fields": {
+      "state": 14,
+      "name": "Kishtwar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 227,
+    "fields": {
+      "state": 14,
+      "name": "Kulgam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 228,
+    "fields": {
+      "state": 14,
+      "name": "Kupwara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 229,
+    "fields": {
+      "state": 14,
+      "name": "Leh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 230,
+    "fields": {
+      "state": 14,
+      "name": "Poonch",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 231,
+    "fields": {
+      "state": 14,
+      "name": "Pulwama",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 232,
+    "fields": {
+      "state": 14,
+      "name": "Rajouri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 233,
+    "fields": {
+      "state": 14,
+      "name": "Ramban",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 234,
+    "fields": {
+      "state": 14,
+      "name": "Reasi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 235,
+    "fields": {
+      "state": 14,
+      "name": "Samba",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 236,
+    "fields": {
+      "state": 14,
+      "name": "Shopian",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 237,
+    "fields": {
+      "state": 14,
+      "name": "Srinagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 238,
+    "fields": {
+      "state": 14,
+      "name": "Udhampur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 15,
+    "fields": {
+      "name": "Jharkhand"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 239,
+    "fields": {
+      "state": 15,
+      "name": "Bokaro",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 240,
+    "fields": {
+      "state": 15,
+      "name": "Chatra",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 241,
+    "fields": {
+      "state": 15,
+      "name": "Deoghar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 242,
+    "fields": {
+      "state": 15,
+      "name": "Dhanbad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 243,
+    "fields": {
+      "state": 15,
+      "name": "Dumka",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 244,
+    "fields": {
+      "state": 15,
+      "name": "East Singhbhum",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 245,
+    "fields": {
+      "state": 15,
+      "name": "Garhwa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 246,
+    "fields": {
+      "state": 15,
+      "name": "Giridih",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 247,
+    "fields": {
+      "state": 15,
+      "name": "Godda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 248,
+    "fields": {
+      "state": 15,
+      "name": "Gumla",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 249,
+    "fields": {
+      "state": 15,
+      "name": "Hazaribag",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 250,
+    "fields": {
+      "state": 15,
+      "name": "Jamtara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 251,
+    "fields": {
+      "state": 15,
+      "name": "Khunti",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 252,
+    "fields": {
+      "state": 15,
+      "name": "Koderma",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 253,
+    "fields": {
+      "state": 15,
+      "name": "Latehar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 254,
+    "fields": {
+      "state": 15,
+      "name": "Lohardaga",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 255,
+    "fields": {
+      "state": 15,
+      "name": "Pakur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 256,
+    "fields": {
+      "state": 15,
+      "name": "Palamu",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 257,
+    "fields": {
+      "state": 15,
+      "name": "Ramgarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 258,
+    "fields": {
+      "state": 15,
+      "name": "Ranchi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 259,
+    "fields": {
+      "state": 15,
+      "name": "Sahibganj",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 260,
+    "fields": {
+      "state": 15,
+      "name": "Seraikela-Kharsawan",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 261,
+    "fields": {
+      "state": 15,
+      "name": "Simdega",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 262,
+    "fields": {
+      "state": 15,
+      "name": "West Singhbhum",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 16,
+    "fields": {
+      "name": "Karnataka"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 263,
+    "fields": {
+      "state": 16,
+      "name": "Bagalkot",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 264,
+    "fields": {
+      "state": 16,
+      "name": "Ballari (Bellary)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 265,
+    "fields": {
+      "state": 16,
+      "name": "Belagavi (Belgaum)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 266,
+    "fields": {
+      "state": 16,
+      "name": "Bengaluru (Bangalore) Rural",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 267,
+    "fields": {
+      "state": 16,
+      "name": "Bengaluru (Bangalore) Urban",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 268,
+    "fields": {
+      "state": 16,
+      "name": "Bidar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 269,
+    "fields": {
+      "state": 16,
+      "name": "Chamarajanagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 270,
+    "fields": {
+      "state": 16,
+      "name": "Chikballapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 271,
+    "fields": {
+      "state": 16,
+      "name": "Chikkamagaluru (Chikmagalur)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 272,
+    "fields": {
+      "state": 16,
+      "name": "Chitradurga",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 273,
+    "fields": {
+      "state": 16,
+      "name": "Dakshina Kannada",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 274,
+    "fields": {
+      "state": 16,
+      "name": "Davangere",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 275,
+    "fields": {
+      "state": 16,
+      "name": "Dharwad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 276,
+    "fields": {
+      "state": 16,
+      "name": "Gadag",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 277,
+    "fields": {
+      "state": 16,
+      "name": "Hassan",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 278,
+    "fields": {
+      "state": 16,
+      "name": "Haveri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 279,
+    "fields": {
+      "state": 16,
+      "name": "Kalaburagi (Gulbarga)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 280,
+    "fields": {
+      "state": 16,
+      "name": "Kodagu",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 281,
+    "fields": {
+      "state": 16,
+      "name": "Kolar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 282,
+    "fields": {
+      "state": 16,
+      "name": "Koppal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 283,
+    "fields": {
+      "state": 16,
+      "name": "Mandya",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 284,
+    "fields": {
+      "state": 16,
+      "name": "Mysuru (Mysore)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 285,
+    "fields": {
+      "state": 16,
+      "name": "Raichur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 286,
+    "fields": {
+      "state": 16,
+      "name": "Ramanagara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 287,
+    "fields": {
+      "state": 16,
+      "name": "Shivamogga (Shimoga)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 288,
+    "fields": {
+      "state": 16,
+      "name": "Tumakuru (Tumkur)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 289,
+    "fields": {
+      "state": 16,
+      "name": "Udupi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 290,
+    "fields": {
+      "state": 16,
+      "name": "Uttara Kannada (Karwar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 291,
+    "fields": {
+      "state": 16,
+      "name": "Vijayapura (Bijapur)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 292,
+    "fields": {
+      "state": 16,
+      "name": "Yadgir",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 17,
+    "fields": {
+      "name": "Kerala"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 293,
+    "fields": {
+      "state": 17,
+      "name": "Alappuzha",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 294,
+    "fields": {
+      "state": 17,
+      "name": "Ernakulam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 295,
+    "fields": {
+      "state": 17,
+      "name": "Idukki",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 296,
+    "fields": {
+      "state": 17,
+      "name": "Kannur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 297,
+    "fields": {
+      "state": 17,
+      "name": "Kasaragod",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 298,
+    "fields": {
+      "state": 17,
+      "name": "Kollam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 299,
+    "fields": {
+      "state": 17,
+      "name": "Kottayam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 300,
+    "fields": {
+      "state": 17,
+      "name": "Kozhikode",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 301,
+    "fields": {
+      "state": 17,
+      "name": "Malappuram",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 302,
+    "fields": {
+      "state": 17,
+      "name": "Palakkad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 303,
+    "fields": {
+      "state": 17,
+      "name": "Pathanamthitta",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 304,
+    "fields": {
+      "state": 17,
+      "name": "Thiruvananthapuram",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 305,
+    "fields": {
+      "state": 17,
+      "name": "Thrissur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 306,
+    "fields": {
+      "state": 17,
+      "name": "Wayanad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 18,
+    "fields": {
+      "name": "Lakshadweep (UT)"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 307,
+    "fields": {
+      "state": 18,
+      "name": "Agatti",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 308,
+    "fields": {
+      "state": 18,
+      "name": "Amini",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 309,
+    "fields": {
+      "state": 18,
+      "name": "Androth",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 310,
+    "fields": {
+      "state": 18,
+      "name": "Bithra",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 311,
+    "fields": {
+      "state": 18,
+      "name": "Chethlath",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 312,
+    "fields": {
+      "state": 18,
+      "name": "Kavaratti",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 313,
+    "fields": {
+      "state": 18,
+      "name": "Kadmath",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 314,
+    "fields": {
+      "state": 18,
+      "name": "Kalpeni",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 315,
+    "fields": {
+      "state": 18,
+      "name": "Kilthan",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 316,
+    "fields": {
+      "state": 18,
+      "name": "Minicoy",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 19,
+    "fields": {
+      "name": "Madhya Pradesh"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 317,
+    "fields": {
+      "state": 19,
+      "name": "Agar Malwa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 318,
+    "fields": {
+      "state": 19,
+      "name": "Alirajpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 319,
+    "fields": {
+      "state": 19,
+      "name": "Anuppur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 320,
+    "fields": {
+      "state": 19,
+      "name": "Ashoknagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 321,
+    "fields": {
+      "state": 19,
+      "name": "Balaghat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 322,
+    "fields": {
+      "state": 19,
+      "name": "Barwani",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 323,
+    "fields": {
+      "state": 19,
+      "name": "Betul",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 324,
+    "fields": {
+      "state": 19,
+      "name": "Bhind",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 325,
+    "fields": {
+      "state": 19,
+      "name": "Bhopal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 326,
+    "fields": {
+      "state": 19,
+      "name": "Burhanpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 327,
+    "fields": {
+      "state": 19,
+      "name": "Chhatarpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 328,
+    "fields": {
+      "state": 19,
+      "name": "Chhindwara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 329,
+    "fields": {
+      "state": 19,
+      "name": "Damoh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 330,
+    "fields": {
+      "state": 19,
+      "name": "Datia",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 331,
+    "fields": {
+      "state": 19,
+      "name": "Dewas",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 332,
+    "fields": {
+      "state": 19,
+      "name": "Dhar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 333,
+    "fields": {
+      "state": 19,
+      "name": "Dindori",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 334,
+    "fields": {
+      "state": 19,
+      "name": "Guna",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 335,
+    "fields": {
+      "state": 19,
+      "name": "Gwalior",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 336,
+    "fields": {
+      "state": 19,
+      "name": "Harda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 337,
+    "fields": {
+      "state": 19,
+      "name": "Hoshangabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 338,
+    "fields": {
+      "state": 19,
+      "name": "Indore",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 339,
+    "fields": {
+      "state": 19,
+      "name": "Jabalpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 340,
+    "fields": {
+      "state": 19,
+      "name": "Jhabua",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 341,
+    "fields": {
+      "state": 19,
+      "name": "Katni",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 342,
+    "fields": {
+      "state": 19,
+      "name": "Khandwa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 343,
+    "fields": {
+      "state": 19,
+      "name": "Khargone",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 344,
+    "fields": {
+      "state": 19,
+      "name": "Mandla",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 345,
+    "fields": {
+      "state": 19,
+      "name": "Mandsaur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 346,
+    "fields": {
+      "state": 19,
+      "name": "Morena",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 347,
+    "fields": {
+      "state": 19,
+      "name": "Narsinghpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 348,
+    "fields": {
+      "state": 19,
+      "name": "Neemuch",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 349,
+    "fields": {
+      "state": 19,
+      "name": "Panna",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 350,
+    "fields": {
+      "state": 19,
+      "name": "Raisen",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 351,
+    "fields": {
+      "state": 19,
+      "name": "Rajgarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 352,
+    "fields": {
+      "state": 19,
+      "name": "Ratlam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 353,
+    "fields": {
+      "state": 19,
+      "name": "Rewa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 354,
+    "fields": {
+      "state": 19,
+      "name": "Sagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 355,
+    "fields": {
+      "state": 19,
+      "name": "Satna",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 356,
+    "fields": {
+      "state": 19,
+      "name": "Sehore",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 357,
+    "fields": {
+      "state": 19,
+      "name": "Seoni",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 358,
+    "fields": {
+      "state": 19,
+      "name": "Shahdol",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 359,
+    "fields": {
+      "state": 19,
+      "name": "Shajapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 360,
+    "fields": {
+      "state": 19,
+      "name": "Sheopur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 361,
+    "fields": {
+      "state": 19,
+      "name": "Shivpuri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 362,
+    "fields": {
+      "state": 19,
+      "name": "Sidhi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 363,
+    "fields": {
+      "state": 19,
+      "name": "Singrauli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 364,
+    "fields": {
+      "state": 19,
+      "name": "Tikamgarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 365,
+    "fields": {
+      "state": 19,
+      "name": "Ujjain",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 366,
+    "fields": {
+      "state": 19,
+      "name": "Umaria",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 367,
+    "fields": {
+      "state": 19,
+      "name": "Vidisha",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 20,
+    "fields": {
+      "name": "Maharashtra"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 368,
+    "fields": {
+      "state": 20,
+      "name": "Ahmednagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 369,
+    "fields": {
+      "state": 20,
+      "name": "Akola",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 370,
+    "fields": {
+      "state": 20,
+      "name": "Amravati",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 371,
+    "fields": {
+      "state": 20,
+      "name": "Aurangabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 372,
+    "fields": {
+      "state": 20,
+      "name": "Beed",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 373,
+    "fields": {
+      "state": 20,
+      "name": "Bhandara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 374,
+    "fields": {
+      "state": 20,
+      "name": "Buldhana",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 375,
+    "fields": {
+      "state": 20,
+      "name": "Chandrapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 376,
+    "fields": {
+      "state": 20,
+      "name": "Dhule",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 377,
+    "fields": {
+      "state": 20,
+      "name": "Gadchiroli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 378,
+    "fields": {
+      "state": 20,
+      "name": "Gondia",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 379,
+    "fields": {
+      "state": 20,
+      "name": "Hingoli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 380,
+    "fields": {
+      "state": 20,
+      "name": "Jalgaon",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 381,
+    "fields": {
+      "state": 20,
+      "name": "Jalna",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 382,
+    "fields": {
+      "state": 20,
+      "name": "Kolhapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 383,
+    "fields": {
+      "state": 20,
+      "name": "Latur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 384,
+    "fields": {
+      "state": 20,
+      "name": "Mumbai City",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 385,
+    "fields": {
+      "state": 20,
+      "name": "Mumbai Suburban",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 386,
+    "fields": {
+      "state": 20,
+      "name": "Nagpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 387,
+    "fields": {
+      "state": 20,
+      "name": "Nanded",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 388,
+    "fields": {
+      "state": 20,
+      "name": "Nandurbar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 389,
+    "fields": {
+      "state": 20,
+      "name": "Nashik",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 390,
+    "fields": {
+      "state": 20,
+      "name": "Osmanabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 391,
+    "fields": {
+      "state": 20,
+      "name": "Palghar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 392,
+    "fields": {
+      "state": 20,
+      "name": "Parbhani",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 393,
+    "fields": {
+      "state": 20,
+      "name": "Pune",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 394,
+    "fields": {
+      "state": 20,
+      "name": "Raigad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 395,
+    "fields": {
+      "state": 20,
+      "name": "Ratnagiri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 396,
+    "fields": {
+      "state": 20,
+      "name": "Sangli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 397,
+    "fields": {
+      "state": 20,
+      "name": "Satara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 398,
+    "fields": {
+      "state": 20,
+      "name": "Sindhudurg",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 399,
+    "fields": {
+      "state": 20,
+      "name": "Solapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 400,
+    "fields": {
+      "state": 20,
+      "name": "Thane",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 401,
+    "fields": {
+      "state": 20,
+      "name": "Wardha",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 402,
+    "fields": {
+      "state": 20,
+      "name": "Washim",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 403,
+    "fields": {
+      "state": 20,
+      "name": "Yavatmal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 21,
+    "fields": {
+      "name": "Manipur"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 404,
+    "fields": {
+      "state": 21,
+      "name": "Bishnupur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 405,
+    "fields": {
+      "state": 21,
+      "name": "Chandel",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 406,
+    "fields": {
+      "state": 21,
+      "name": "Churachandpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 407,
+    "fields": {
+      "state": 21,
+      "name": "Imphal East",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 408,
+    "fields": {
+      "state": 21,
+      "name": "Imphal West",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 409,
+    "fields": {
+      "state": 21,
+      "name": "Jiribam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 410,
+    "fields": {
+      "state": 21,
+      "name": "Kakching",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 411,
+    "fields": {
+      "state": 21,
+      "name": "Kamjong",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 412,
+    "fields": {
+      "state": 21,
+      "name": "Kangpokpi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 413,
+    "fields": {
+      "state": 21,
+      "name": "Noney",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 414,
+    "fields": {
+      "state": 21,
+      "name": "Pherzawl",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 415,
+    "fields": {
+      "state": 21,
+      "name": "Senapati",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 416,
+    "fields": {
+      "state": 21,
+      "name": "Tamenglong",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 417,
+    "fields": {
+      "state": 21,
+      "name": "Tengnoupal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 418,
+    "fields": {
+      "state": 21,
+      "name": "Thoubal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 419,
+    "fields": {
+      "state": 21,
+      "name": "Ukhrul",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 22,
+    "fields": {
+      "name": "Meghalaya"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 420,
+    "fields": {
+      "state": 22,
+      "name": "East Garo Hills",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 421,
+    "fields": {
+      "state": 22,
+      "name": "East Jaintia Hills",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 422,
+    "fields": {
+      "state": 22,
+      "name": "East Khasi Hills",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 423,
+    "fields": {
+      "state": 22,
+      "name": "North Garo Hills",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 424,
+    "fields": {
+      "state": 22,
+      "name": "Ri Bhoi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 425,
+    "fields": {
+      "state": 22,
+      "name": "South Garo Hills",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 426,
+    "fields": {
+      "state": 22,
+      "name": "South West Garo Hills ",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 427,
+    "fields": {
+      "state": 22,
+      "name": "South West Khasi Hills",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 428,
+    "fields": {
+      "state": 22,
+      "name": "West Garo Hills",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 429,
+    "fields": {
+      "state": 22,
+      "name": "West Jaintia Hills",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 430,
+    "fields": {
+      "state": 22,
+      "name": "West Khasi Hills",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 23,
+    "fields": {
+      "name": "Mizoram"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 431,
+    "fields": {
+      "state": 23,
+      "name": "Aizawl",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 432,
+    "fields": {
+      "state": 23,
+      "name": "Champhai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 433,
+    "fields": {
+      "state": 23,
+      "name": "Kolasib",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 434,
+    "fields": {
+      "state": 23,
+      "name": "Lawngtlai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 435,
+    "fields": {
+      "state": 23,
+      "name": "Lunglei",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 436,
+    "fields": {
+      "state": 23,
+      "name": "Mamit",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 437,
+    "fields": {
+      "state": 23,
+      "name": "Saiha",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 438,
+    "fields": {
+      "state": 23,
+      "name": "Serchhip",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 24,
+    "fields": {
+      "name": "Nagaland"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 439,
+    "fields": {
+      "state": 24,
+      "name": "Dimapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 440,
+    "fields": {
+      "state": 24,
+      "name": "Kiphire",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 441,
+    "fields": {
+      "state": 24,
+      "name": "Kohima",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 442,
+    "fields": {
+      "state": 24,
+      "name": "Longleng",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 443,
+    "fields": {
+      "state": 24,
+      "name": "Mokokchung",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 444,
+    "fields": {
+      "state": 24,
+      "name": "Mon",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 445,
+    "fields": {
+      "state": 24,
+      "name": "Peren",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 446,
+    "fields": {
+      "state": 24,
+      "name": "Phek",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 447,
+    "fields": {
+      "state": 24,
+      "name": "Tuensang",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 448,
+    "fields": {
+      "state": 24,
+      "name": "Wokha",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 449,
+    "fields": {
+      "state": 24,
+      "name": "Zunheboto",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 25,
+    "fields": {
+      "name": "Odisha"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 450,
+    "fields": {
+      "state": 25,
+      "name": "Angul",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 451,
+    "fields": {
+      "state": 25,
+      "name": "Balangir",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 452,
+    "fields": {
+      "state": 25,
+      "name": "Balasore",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 453,
+    "fields": {
+      "state": 25,
+      "name": "Bargarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 454,
+    "fields": {
+      "state": 25,
+      "name": "Bhadrak",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 455,
+    "fields": {
+      "state": 25,
+      "name": "Boudh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 456,
+    "fields": {
+      "state": 25,
+      "name": "Cuttack",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 457,
+    "fields": {
+      "state": 25,
+      "name": "Deogarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 458,
+    "fields": {
+      "state": 25,
+      "name": "Dhenkanal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 459,
+    "fields": {
+      "state": 25,
+      "name": "Gajapati",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 460,
+    "fields": {
+      "state": 25,
+      "name": "Ganjam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 461,
+    "fields": {
+      "state": 25,
+      "name": "Jagatsinghapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 462,
+    "fields": {
+      "state": 25,
+      "name": "Jajpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 463,
+    "fields": {
+      "state": 25,
+      "name": "Jharsuguda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 464,
+    "fields": {
+      "state": 25,
+      "name": "Kalahandi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 465,
+    "fields": {
+      "state": 25,
+      "name": "Kandhamal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 466,
+    "fields": {
+      "state": 25,
+      "name": "Kendrapara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 467,
+    "fields": {
+      "state": 25,
+      "name": "Kendujhar (Keonjhar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 468,
+    "fields": {
+      "state": 25,
+      "name": "Khordha",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 469,
+    "fields": {
+      "state": 25,
+      "name": "Koraput",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 470,
+    "fields": {
+      "state": 25,
+      "name": "Malkangiri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 471,
+    "fields": {
+      "state": 25,
+      "name": "Mayurbhanj",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 472,
+    "fields": {
+      "state": 25,
+      "name": "Nabarangpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 473,
+    "fields": {
+      "state": 25,
+      "name": "Nayagarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 474,
+    "fields": {
+      "state": 25,
+      "name": "Nuapada",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 475,
+    "fields": {
+      "state": 25,
+      "name": "Puri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 476,
+    "fields": {
+      "state": 25,
+      "name": "Rayagada",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 477,
+    "fields": {
+      "state": 25,
+      "name": "Sambalpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 478,
+    "fields": {
+      "state": 25,
+      "name": "Sonepur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 479,
+    "fields": {
+      "state": 25,
+      "name": "Sundargarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 26,
+    "fields": {
+      "name": "Puducherry (UT)"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 480,
+    "fields": {
+      "state": 26,
+      "name": "Karaikal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 481,
+    "fields": {
+      "state": 26,
+      "name": "Mahe",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 482,
+    "fields": {
+      "state": 26,
+      "name": "Pondicherry",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 483,
+    "fields": {
+      "state": 26,
+      "name": "Yanam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 27,
+    "fields": {
+      "name": "Punjab"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 484,
+    "fields": {
+      "state": 27,
+      "name": "Amritsar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 485,
+    "fields": {
+      "state": 27,
+      "name": "Barnala",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 486,
+    "fields": {
+      "state": 27,
+      "name": "Bathinda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 487,
+    "fields": {
+      "state": 27,
+      "name": "Faridkot",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 488,
+    "fields": {
+      "state": 27,
+      "name": "Fatehgarh Sahib",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 489,
+    "fields": {
+      "state": 27,
+      "name": "Fazilka",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 490,
+    "fields": {
+      "state": 27,
+      "name": "Ferozepur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 491,
+    "fields": {
+      "state": 27,
+      "name": "Gurdaspur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 492,
+    "fields": {
+      "state": 27,
+      "name": "Hoshiarpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 493,
+    "fields": {
+      "state": 27,
+      "name": "Jalandhar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 494,
+    "fields": {
+      "state": 27,
+      "name": "Kapurthala",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 495,
+    "fields": {
+      "state": 27,
+      "name": "Ludhiana",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 496,
+    "fields": {
+      "state": 27,
+      "name": "Mansa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 497,
+    "fields": {
+      "state": 27,
+      "name": "Moga",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 498,
+    "fields": {
+      "state": 27,
+      "name": "Muktsar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 499,
+    "fields": {
+      "state": 27,
+      "name": "Nawanshahr (Shahid Bhagat Singh Nagar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 500,
+    "fields": {
+      "state": 27,
+      "name": "Pathankot",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 501,
+    "fields": {
+      "state": 27,
+      "name": "Patiala",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 502,
+    "fields": {
+      "state": 27,
+      "name": "Rupnagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 503,
+    "fields": {
+      "state": 27,
+      "name": "Sahibzada Ajit Singh Nagar (Mohali)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 504,
+    "fields": {
+      "state": 27,
+      "name": "Sangrur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 505,
+    "fields": {
+      "state": 27,
+      "name": "Tarn Taran",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 28,
+    "fields": {
+      "name": "Rajasthan"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 506,
+    "fields": {
+      "state": 28,
+      "name": "Ajmer",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 507,
+    "fields": {
+      "state": 28,
+      "name": "Alwar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 508,
+    "fields": {
+      "state": 28,
+      "name": "Banswara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 509,
+    "fields": {
+      "state": 28,
+      "name": "Baran",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 510,
+    "fields": {
+      "state": 28,
+      "name": "Barmer",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 511,
+    "fields": {
+      "state": 28,
+      "name": "Bharatpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 512,
+    "fields": {
+      "state": 28,
+      "name": "Bhilwara",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 513,
+    "fields": {
+      "state": 28,
+      "name": "Bikaner",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 514,
+    "fields": {
+      "state": 28,
+      "name": "Bundi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 515,
+    "fields": {
+      "state": 28,
+      "name": "Chittorgarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 516,
+    "fields": {
+      "state": 28,
+      "name": "Churu",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 517,
+    "fields": {
+      "state": 28,
+      "name": "Dausa",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 518,
+    "fields": {
+      "state": 28,
+      "name": "Dholpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 519,
+    "fields": {
+      "state": 28,
+      "name": "Dungarpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 520,
+    "fields": {
+      "state": 28,
+      "name": "Hanumangarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 521,
+    "fields": {
+      "state": 28,
+      "name": "Jaipur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 522,
+    "fields": {
+      "state": 28,
+      "name": "Jaisalmer",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 523,
+    "fields": {
+      "state": 28,
+      "name": "Jalore",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 524,
+    "fields": {
+      "state": 28,
+      "name": "Jhalawar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 525,
+    "fields": {
+      "state": 28,
+      "name": "Jhunjhunu",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 526,
+    "fields": {
+      "state": 28,
+      "name": "Jodhpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 527,
+    "fields": {
+      "state": 28,
+      "name": "Karauli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 528,
+    "fields": {
+      "state": 28,
+      "name": "Kota",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 529,
+    "fields": {
+      "state": 28,
+      "name": "Nagaur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 530,
+    "fields": {
+      "state": 28,
+      "name": "Pali",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 531,
+    "fields": {
+      "state": 28,
+      "name": "Pratapgarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 532,
+    "fields": {
+      "state": 28,
+      "name": "Rajsamand",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 533,
+    "fields": {
+      "state": 28,
+      "name": "Sawai Madhopur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 534,
+    "fields": {
+      "state": 28,
+      "name": "Sikar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 535,
+    "fields": {
+      "state": 28,
+      "name": "Sirohi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 536,
+    "fields": {
+      "state": 28,
+      "name": "Sri Ganganagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 537,
+    "fields": {
+      "state": 28,
+      "name": "Tonk",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 538,
+    "fields": {
+      "state": 28,
+      "name": "Udaipur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 29,
+    "fields": {
+      "name": "Sikkim"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 539,
+    "fields": {
+      "state": 29,
+      "name": "East Sikkim",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 540,
+    "fields": {
+      "state": 29,
+      "name": "North Sikkim",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 541,
+    "fields": {
+      "state": 29,
+      "name": "South Sikkim",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 542,
+    "fields": {
+      "state": 29,
+      "name": "West Sikkim",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 30,
+    "fields": {
+      "name": "Tamil Nadu"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 543,
+    "fields": {
+      "state": 30,
+      "name": "Ariyalur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 544,
+    "fields": {
+      "state": 30,
+      "name": "Chennai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 545,
+    "fields": {
+      "state": 30,
+      "name": "Coimbatore",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 546,
+    "fields": {
+      "state": 30,
+      "name": "Cuddalore",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 547,
+    "fields": {
+      "state": 30,
+      "name": "Dharmapuri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 548,
+    "fields": {
+      "state": 30,
+      "name": "Dindigul",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 549,
+    "fields": {
+      "state": 30,
+      "name": "Erode",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 550,
+    "fields": {
+      "state": 30,
+      "name": "Kanchipuram",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 551,
+    "fields": {
+      "state": 30,
+      "name": "Kanyakumari",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 552,
+    "fields": {
+      "state": 30,
+      "name": "Karur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 553,
+    "fields": {
+      "state": 30,
+      "name": "Krishnagiri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 554,
+    "fields": {
+      "state": 30,
+      "name": "Madurai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 555,
+    "fields": {
+      "state": 30,
+      "name": "Nagapattinam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 556,
+    "fields": {
+      "state": 30,
+      "name": "Namakkal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 557,
+    "fields": {
+      "state": 30,
+      "name": "Nilgiris",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 558,
+    "fields": {
+      "state": 30,
+      "name": "Perambalur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 559,
+    "fields": {
+      "state": 30,
+      "name": "Pudukkottai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 560,
+    "fields": {
+      "state": 30,
+      "name": "Ramanathapuram",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 561,
+    "fields": {
+      "state": 30,
+      "name": "Salem",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 562,
+    "fields": {
+      "state": 30,
+      "name": "Sivaganga",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 563,
+    "fields": {
+      "state": 30,
+      "name": "Thanjavur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 564,
+    "fields": {
+      "state": 30,
+      "name": "Theni",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 565,
+    "fields": {
+      "state": 30,
+      "name": "Thoothukudi (Tuticorin)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 566,
+    "fields": {
+      "state": 30,
+      "name": "Tiruchirappalli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 567,
+    "fields": {
+      "state": 30,
+      "name": "Tirunelveli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 568,
+    "fields": {
+      "state": 30,
+      "name": "Tiruppur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 569,
+    "fields": {
+      "state": 30,
+      "name": "Tiruvallur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 570,
+    "fields": {
+      "state": 30,
+      "name": "Tiruvannamalai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 571,
+    "fields": {
+      "state": 30,
+      "name": "Tiruvarur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 572,
+    "fields": {
+      "state": 30,
+      "name": "Vellore",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 573,
+    "fields": {
+      "state": 30,
+      "name": "Viluppuram",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 574,
+    "fields": {
+      "state": 30,
+      "name": "Virudhunagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 31,
+    "fields": {
+      "name": "Telangana"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 575,
+    "fields": {
+      "state": 31,
+      "name": "Adilabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 576,
+    "fields": {
+      "state": 31,
+      "name": "Bhadradri Kothagudem",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 577,
+    "fields": {
+      "state": 31,
+      "name": "Hyderabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 578,
+    "fields": {
+      "state": 31,
+      "name": "Jagtial",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 579,
+    "fields": {
+      "state": 31,
+      "name": "Jangaon",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 580,
+    "fields": {
+      "state": 31,
+      "name": "Jayashankar Bhoopalpally",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 581,
+    "fields": {
+      "state": 31,
+      "name": "Jogulamba Gadwal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 582,
+    "fields": {
+      "state": 31,
+      "name": "Kamareddy",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 583,
+    "fields": {
+      "state": 31,
+      "name": "Karimnagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 584,
+    "fields": {
+      "state": 31,
+      "name": "Khammam",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 585,
+    "fields": {
+      "state": 31,
+      "name": "Komaram Bheem Asifabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 586,
+    "fields": {
+      "state": 31,
+      "name": "Mahabubabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 587,
+    "fields": {
+      "state": 31,
+      "name": "Mahabubnagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 588,
+    "fields": {
+      "state": 31,
+      "name": "Mancherial",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 589,
+    "fields": {
+      "state": 31,
+      "name": "Medak",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 590,
+    "fields": {
+      "state": 31,
+      "name": "Medchal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 591,
+    "fields": {
+      "state": 31,
+      "name": "Nagarkurnool",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 592,
+    "fields": {
+      "state": 31,
+      "name": "Nalgonda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 593,
+    "fields": {
+      "state": 31,
+      "name": "Nirmal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 594,
+    "fields": {
+      "state": 31,
+      "name": "Nizamabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 595,
+    "fields": {
+      "state": 31,
+      "name": "Peddapalli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 596,
+    "fields": {
+      "state": 31,
+      "name": "Rajanna Sircilla",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 597,
+    "fields": {
+      "state": 31,
+      "name": "Rangareddy",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 598,
+    "fields": {
+      "state": 31,
+      "name": "Sangareddy",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 599,
+    "fields": {
+      "state": 31,
+      "name": "Siddipet",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 600,
+    "fields": {
+      "state": 31,
+      "name": "Suryapet",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 601,
+    "fields": {
+      "state": 31,
+      "name": "Vikarabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 602,
+    "fields": {
+      "state": 31,
+      "name": "Wanaparthy",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 603,
+    "fields": {
+      "state": 31,
+      "name": "Warangal (Rural)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 604,
+    "fields": {
+      "state": 31,
+      "name": "Warangal (Urban)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 605,
+    "fields": {
+      "state": 31,
+      "name": "Yadadri Bhuvanagiri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 32,
+    "fields": {
+      "name": "Tripura"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 606,
+    "fields": {
+      "state": 32,
+      "name": "Dhalai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 607,
+    "fields": {
+      "state": 32,
+      "name": "Gomati",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 608,
+    "fields": {
+      "state": 32,
+      "name": "Khowai",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 609,
+    "fields": {
+      "state": 32,
+      "name": "North Tripura",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 610,
+    "fields": {
+      "state": 32,
+      "name": "Sepahijala",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 611,
+    "fields": {
+      "state": 32,
+      "name": "South Tripura",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 612,
+    "fields": {
+      "state": 32,
+      "name": "Unakoti",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 613,
+    "fields": {
+      "state": 32,
+      "name": "West Tripura",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 33,
+    "fields": {
+      "name": "Uttarakhand"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 614,
+    "fields": {
+      "state": 33,
+      "name": "Almora",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 615,
+    "fields": {
+      "state": 33,
+      "name": "Bageshwar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 616,
+    "fields": {
+      "state": 33,
+      "name": "Chamoli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 617,
+    "fields": {
+      "state": 33,
+      "name": "Champawat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 618,
+    "fields": {
+      "state": 33,
+      "name": "Dehradun",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 619,
+    "fields": {
+      "state": 33,
+      "name": "Haridwar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 620,
+    "fields": {
+      "state": 33,
+      "name": "Nainital",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 621,
+    "fields": {
+      "state": 33,
+      "name": "Pauri Garhwal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 622,
+    "fields": {
+      "state": 33,
+      "name": "Pithoragarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 623,
+    "fields": {
+      "state": 33,
+      "name": "Rudraprayag",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 624,
+    "fields": {
+      "state": 33,
+      "name": "Tehri Garhwal",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 625,
+    "fields": {
+      "state": 33,
+      "name": "Udham Singh Nagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 626,
+    "fields": {
+      "state": 33,
+      "name": "Uttarkashi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 34,
+    "fields": {
+      "name": "Uttar Pradesh"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 627,
+    "fields": {
+      "state": 34,
+      "name": "Agra",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 628,
+    "fields": {
+      "state": 34,
+      "name": "Aligarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 629,
+    "fields": {
+      "state": 34,
+      "name": "Allahabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 630,
+    "fields": {
+      "state": 34,
+      "name": "Ambedkar Nagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 631,
+    "fields": {
+      "state": 34,
+      "name": "Amethi (Chatrapati Sahuji Mahraj Nagar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 632,
+    "fields": {
+      "state": 34,
+      "name": "Amroha (J.P. Nagar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 633,
+    "fields": {
+      "state": 34,
+      "name": "Auraiya",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 634,
+    "fields": {
+      "state": 34,
+      "name": "Azamgarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 635,
+    "fields": {
+      "state": 34,
+      "name": "Baghpat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 636,
+    "fields": {
+      "state": 34,
+      "name": "Bahraich",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 637,
+    "fields": {
+      "state": 34,
+      "name": "Ballia",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 638,
+    "fields": {
+      "state": 34,
+      "name": "Balrampur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 639,
+    "fields": {
+      "state": 34,
+      "name": "Banda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 640,
+    "fields": {
+      "state": 34,
+      "name": "Barabanki",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 641,
+    "fields": {
+      "state": 34,
+      "name": "Bareilly",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 642,
+    "fields": {
+      "state": 34,
+      "name": "Basti",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 643,
+    "fields": {
+      "state": 34,
+      "name": "Bhadohi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 644,
+    "fields": {
+      "state": 34,
+      "name": "Bijnor",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 645,
+    "fields": {
+      "state": 34,
+      "name": "Budaun",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 646,
+    "fields": {
+      "state": 34,
+      "name": "Bulandshahr",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 647,
+    "fields": {
+      "state": 34,
+      "name": "Chandauli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 648,
+    "fields": {
+      "state": 34,
+      "name": "Chitrakoot",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 649,
+    "fields": {
+      "state": 34,
+      "name": "Deoria",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 650,
+    "fields": {
+      "state": 34,
+      "name": "Etah",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 651,
+    "fields": {
+      "state": 34,
+      "name": "Etawah",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 652,
+    "fields": {
+      "state": 34,
+      "name": "Faizabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 653,
+    "fields": {
+      "state": 34,
+      "name": "Farrukhabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 654,
+    "fields": {
+      "state": 34,
+      "name": "Fatehpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 655,
+    "fields": {
+      "state": 34,
+      "name": "Firozabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 656,
+    "fields": {
+      "state": 34,
+      "name": "Gautam Buddha Nagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 657,
+    "fields": {
+      "state": 34,
+      "name": "Ghaziabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 658,
+    "fields": {
+      "state": 34,
+      "name": "Ghazipur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 659,
+    "fields": {
+      "state": 34,
+      "name": "Gonda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 660,
+    "fields": {
+      "state": 34,
+      "name": "Gorakhpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 661,
+    "fields": {
+      "state": 34,
+      "name": "Hamirpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 662,
+    "fields": {
+      "state": 34,
+      "name": "Hapur (Panchsheel Nagar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 663,
+    "fields": {
+      "state": 34,
+      "name": "Hardoi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 664,
+    "fields": {
+      "state": 34,
+      "name": "Hathras",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 665,
+    "fields": {
+      "state": 34,
+      "name": "Jalaun",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 666,
+    "fields": {
+      "state": 34,
+      "name": "Jaunpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 667,
+    "fields": {
+      "state": 34,
+      "name": "Jhansi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 668,
+    "fields": {
+      "state": 34,
+      "name": "Kannauj",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 669,
+    "fields": {
+      "state": 34,
+      "name": "Kanpur Dehat",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 670,
+    "fields": {
+      "state": 34,
+      "name": "Kanpur Nagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 671,
+    "fields": {
+      "state": 34,
+      "name": "Kanshiram Nagar (Kasganj)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 672,
+    "fields": {
+      "state": 34,
+      "name": "Kaushambi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 673,
+    "fields": {
+      "state": 34,
+      "name": "Kushinagar (Padrauna)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 674,
+    "fields": {
+      "state": 34,
+      "name": "Lakhimpur - Kheri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 675,
+    "fields": {
+      "state": 34,
+      "name": "Lalitpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 676,
+    "fields": {
+      "state": 34,
+      "name": "Lucknow",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 677,
+    "fields": {
+      "state": 34,
+      "name": "Maharajganj",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 678,
+    "fields": {
+      "state": 34,
+      "name": "Mahoba",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 679,
+    "fields": {
+      "state": 34,
+      "name": "Mainpuri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 680,
+    "fields": {
+      "state": 34,
+      "name": "Mathura",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 681,
+    "fields": {
+      "state": 34,
+      "name": "Mau",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 682,
+    "fields": {
+      "state": 34,
+      "name": "Meerut",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 683,
+    "fields": {
+      "state": 34,
+      "name": "Mirzapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 684,
+    "fields": {
+      "state": 34,
+      "name": "Moradabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 685,
+    "fields": {
+      "state": 34,
+      "name": "Muzaffarnagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 686,
+    "fields": {
+      "state": 34,
+      "name": "Pilibhit",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 687,
+    "fields": {
+      "state": 34,
+      "name": "Pratapgarh",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 688,
+    "fields": {
+      "state": 34,
+      "name": "RaeBareli",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 689,
+    "fields": {
+      "state": 34,
+      "name": "Rampur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 690,
+    "fields": {
+      "state": 34,
+      "name": "Saharanpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 691,
+    "fields": {
+      "state": 34,
+      "name": "Sambhal (Bhim Nagar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 692,
+    "fields": {
+      "state": 34,
+      "name": "Sant Kabir Nagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 693,
+    "fields": {
+      "state": 34,
+      "name": "Shahjahanpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 694,
+    "fields": {
+      "state": 34,
+      "name": "Shamali (Prabuddh Nagar)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 695,
+    "fields": {
+      "state": 34,
+      "name": "Shravasti",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 696,
+    "fields": {
+      "state": 34,
+      "name": "Siddharth Nagar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 697,
+    "fields": {
+      "state": 34,
+      "name": "Sitapur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 698,
+    "fields": {
+      "state": 34,
+      "name": "Sonbhadra",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 699,
+    "fields": {
+      "state": 34,
+      "name": "Sultanpur",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 700,
+    "fields": {
+      "state": 34,
+      "name": "Unnao",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 701,
+    "fields": {
+      "state": 34,
+      "name": "Varanasi",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.state",
+    "pk": 35,
+    "fields": {
+      "name": "West Bengal"
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 702,
+    "fields": {
+      "state": 35,
+      "name": "Alipurduar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 703,
+    "fields": {
+      "state": 35,
+      "name": "Bankura",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 704,
+    "fields": {
+      "state": 35,
+      "name": "Birbhum",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 705,
+    "fields": {
+      "state": 35,
+      "name": "Burdwan (Bardhaman)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 706,
+    "fields": {
+      "state": 35,
+      "name": "Cooch Behar",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 707,
+    "fields": {
+      "state": 35,
+      "name": "Dakshin Dinajpur (South Dinajpur)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 708,
+    "fields": {
+      "state": 35,
+      "name": "Darjeeling",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 709,
+    "fields": {
+      "state": 35,
+      "name": "Hooghly",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 710,
+    "fields": {
+      "state": 35,
+      "name": "Howrah",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 711,
+    "fields": {
+      "state": 35,
+      "name": "Jalpaiguri",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 712,
+    "fields": {
+      "state": 35,
+      "name": "Kalimpong",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 713,
+    "fields": {
+      "state": 35,
+      "name": "Kolkata",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 714,
+    "fields": {
+      "state": 35,
+      "name": "Malda",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 715,
+    "fields": {
+      "state": 35,
+      "name": "Murshidabad",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 716,
+    "fields": {
+      "state": 35,
+      "name": "Nadia",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 717,
+    "fields": {
+      "state": 35,
+      "name": "North 24 Parganas",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 718,
+    "fields": {
+      "state": 35,
+      "name": "Paschim Medinipur (West Medinipur)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 719,
+    "fields": {
+      "state": 35,
+      "name": "Purba Medinipur (East Medinipur)",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 720,
+    "fields": {
+      "state": 35,
+      "name": "Purulia",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 721,
+    "fields": {
+      "state": 35,
+      "name": "South 24 Parganas",
+      "description": ""
+    }
+  },
+  {
+    "model": "guide.district",
+    "pk": 722,
+    "fields": {
+      "state": 35,
+      "name": "Uttar Dinajpur (North Dinajpur)",
+      "description": ""
+    }
+  }
+]

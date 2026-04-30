@@ -1,0 +1,47 @@
+{% extends 'guide/base.html' %}
+
+{% block title %}Election Timeline{% endblock %}
+
+{% block content %}
+<div class="glassCard" style="max-width: 900px; padding-bottom: 50px;">
+    <h1>⏳ Election Timeline</h1>
+    <p style="text-align: center; margin-bottom: 40px;">Here is the journey of an election from start to finish.</p>
+
+    <div class="timelineContainer">
+        <div class="timelineItem left">
+            <div class="timelineContent">
+                <h2>1. Announcement</h2>
+                <p>The dates for the election are declared by the Election Commission.</p>
+            </div>
+        </div>
+        <div class="timelineItem right">
+            <div class="timelineContent">
+                <h2>2. Registration</h2>
+                <p>Citizens check their names on the voter list and register if missing.</p>
+            </div>
+        </div>
+        <div class="timelineItem left">
+            <div class="timelineContent">
+                <h2>3. Campaigning</h2>
+                <p>Candidates travel to share their promises with the public.</p>
+            </div>
+        </div>
+        <div class="timelineItem right">
+            <div class="timelineContent">
+                <h2>4. Polling Day</h2>
+                <p>Everyone goes to their local booth to cast their vote secretly.</p>
+            </div>
+        </div>
+        <div class="timelineItem left">
+            <div class="timelineContent">
+                <h2>5. Results Day</h2>
+                <p>Votes are counted, and the winner is announced to the public.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 50px;">
+        <a href="{% url 'steps' %}" class="actionBtn">Next: How To Vote ➔</a>
+    </div>
+</div>
+{% endblock %}
