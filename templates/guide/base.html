@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
 
@@ -16,13 +17,24 @@
             <img src="{% static 'images/logo.png' %}" alt="Election Buddy Logo" class="logoImg">
             <span>Election Buddy</span>
         </a>
-        <div class="navLinks">
+        
+        <div class="navLinks" id="navLinks">
             <a href="{% url 'index' %}">Home</a>
             <a href="{% url 'process' %}">Process</a>
             <a href="{% url 'timeline' %}">Timeline</a>
             <a href="{% url 'steps' %}">Steps</a>
             <a href="{% url 'constituency_lookup' %}">Find Constituency</a>
+            <button onclick="triggerTranslate()" class="translateBtn" id="translateBtn">🌐 Translate Page</button>
         </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- Hidden Google Translate Element -->
+        <div id="google_translate_element" style="display:none;"></div>
     </nav>
 
     <div class="mainContent">
@@ -46,84 +58,7 @@
         </div>
     </div>
 
-    <script>
-        const geminiApiKey = "{{ geminiApiKey|escapejs }}";
-
-        function toggleHelp() {
-            const popup = document.getElementById('helpPopup');
-            popup.classList.toggle('active');
-        }
-
-        function handleKeyPress(e) {
-            if(e.key === 'Enter') {
-                sendMessage();
-            }
-        }
-
-        async function sendMessage() {
-            const inputField = document.getElementById('userInput');
-            const message = inputField.value.trim();
-            if(!message) return;
-
-            addMessage(message, 'msgUser');
-            inputField.value = '';
-
-            // Add loading message
-            const loadingId = addMessage("Thinking...", 'msgAi');
-
-            try {
-                // Call Gemini API (placeholder logic, expects real endpoint and key)
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiApiKey}`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        contents: [{
-                            parts: [{
-                                text: "You are a helpful assistant explaining the election process to someone who may have lower education or no technical background. Keep answers short, simple, and encouraging. User says: " + message
-                            }]
-                        }]
-                    })
-                });
-
-                const data = await response.json();
-                
-                // Remove loading message
-                const chatBox = document.getElementById('aiChatBox');
-                const loadMsg = document.getElementById(loadingId);
-                if(loadMsg) chatBox.removeChild(loadMsg);
-
-                let aiReply = "I'm sorry, I couldn't understand that.";
-                if(data && data.candidates && data.candidates[0].content.parts[0].text) {
-                    aiReply = data.candidates[0].content.parts[0].text;
-                }
-                
-                addMessage(aiReply, 'msgAi');
-
-            } catch (err) {
-                console.error(err);
-                const chatBox = document.getElementById('aiChatBox');
-                const loadMsg = document.getElementById(loadingId);
-                if(loadMsg) chatBox.removeChild(loadMsg);
-                addMessage("Oops! Connection failed. Please make sure the API key is set.", 'msgAi');
-            }
-        }
-
-        function addMessage(text, className) {
-            const chatBox = document.getElementById('aiChatBox');
-            const msgDiv = document.createElement('div');
-            msgDiv.className = `chatMsg ${className}`;
-            msgDiv.innerText = text;
-            
-            const msgId = 'msg-' + Date.now();
-            msgDiv.id = msgId;
-            
-            chatBox.appendChild(msgDiv);
-            chatBox.scrollTop = chatBox.scrollHeight;
-            
-            return msgId;
-        }
-    </script>
+    <script src="{% static 'js/base.js' %}"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

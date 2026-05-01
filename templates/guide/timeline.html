@@ -1,4 +1,5 @@
 {% extends 'guide/base.html' %}
+{% load static %}
 
 {% block title %}Election Timeline{% endblock %}
 
@@ -10,36 +11,27 @@
     <div class="timelineContainer" id="timelineContainer" style="padding: 40px 0;">
         <div class="timelineProgress" id="timelineProgress"></div>
         
+        {% for event in events %}
+        <div class="timelineItem {% if forloop.counter|divisibleby:2 %}right{% else %}left{% endif %}" style="margin-bottom: 100px;">
+            <div class="timelineContent">
+                <h2 style="color: {% if event.is_upcoming %}var(--primary){% else %}var(--accent){% endif %};">
+                    {{ event.title }}
+                    {% if event.is_upcoming %}
+                        <span style="font-size: 0.6rem; background: rgba(0, 242, 254, 0.1); color: var(--primary); padding: 4px 10px; border-radius: 10px; margin-left: 10px; vertical-align: middle; text-transform: uppercase; letter-spacing: 1px;">Upcoming</span>
+                    {% endif %}
+                </h2>
+                <div style="font-size: 0.9rem; color: var(--accent-cyan); margin-bottom: 12px; font-weight: 700; letter-spacing: 0.5px;">{{ event.date }}</div>
+                <p>{{ event.description }}</p>
+            </div>
+        </div>
+        {% empty %}
         <div class="timelineItem left" style="margin-bottom: 100px;">
             <div class="timelineContent">
-                <h2 style="color: var(--primary);">1. Announcement</h2>
-                <p>The dates for the election are declared by the Election Commission. Model Code of Conduct comes into effect immediately.</p>
+                <h2 style="color: var(--primary);">Schedule Pending</h2>
+                <p>The election commission has not released the specific dates for the next cycle yet. Please check back soon!</p>
             </div>
         </div>
-        <div class="timelineItem right" style="margin-bottom: 100px;">
-            <div class="timelineContent">
-                <h2 style="color: var(--secondary);">2. Registration</h2>
-                <p>Citizens check their names on the electoral rolls. New voters register themselves before the final deadline.</p>
-            </div>
-        </div>
-        <div class="timelineItem left" style="margin-bottom: 100px;">
-            <div class="timelineContent">
-                <h2 style="color: var(--accent);">3. Campaigning</h2>
-                <p>Candidates travel to share their manifestos, hold rallies, and debate on public platforms to win your support.</p>
-            </div>
-        </div>
-        <div class="timelineItem right" style="margin-bottom: 100px;">
-            <div class="timelineContent">
-                <h2 style="color: #ff9933;">4. Polling Day</h2>
-                <p>The ultimate day of democracy! Everyone goes to their local booth to cast their vote secretly using EVMs.</p>
-            </div>
-        </div>
-        <div class="timelineItem left">
-            <div class="timelineContent">
-                <h2 style="color: #00cc66;">5. Results Day</h2>
-                <p>Votes are counted securely. The winner is announced to the public and a new government is officially formed.</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 
     <div style="text-align: center; margin-top: 80px; opacity: 0; transform: translateY(30px); transition: all 1s ease;" id="nextBtnContainer">
@@ -47,53 +39,5 @@
     </div>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const timelineItems = document.querySelectorAll('.timelineItem');
-    const progressBar = document.getElementById('timelineProgress');
-    const container = document.getElementById('timelineContainer');
-    const nextBtn = document.getElementById('nextBtnContainer');
-
-    // Scroll Observer for revealing items
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, {
-        threshold: 0.5,
-        rootMargin: "0px 0px -100px 0px"
-    });
-
-    timelineItems.forEach(item => observer.observe(item));
-
-    // Scroll Progress Bar logic
-    window.addEventListener('scroll', () => {
-        const containerRect = container.getBoundingClientRect();
-        const containerTop = containerRect.top + window.scrollY;
-        const containerHeight = containerRect.height;
-        
-        // Calculate how much we've scrolled past the top of the container
-        let scrollPosition = window.scrollY + (window.innerHeight / 2) - containerTop;
-        
-        // Clamp the value between 0 and containerHeight
-        scrollPosition = Math.max(0, Math.min(scrollPosition, containerHeight));
-        
-        // Convert to percentage
-        let percentage = (scrollPosition / containerHeight) * 100;
-        
-        progressBar.style.height = percentage + '%';
-
-        // Show next button when at bottom
-        if (percentage > 90) {
-            nextBtn.style.opacity = '1';
-            nextBtn.style.transform = 'translateY(0)';
-        }
-    });
-    
-    // Trigger scroll event once on load to set initial state
-    window.dispatchEvent(new Event('scroll'));
-});
-</script>
+<script src="{% static 'js/timeline.js' %}"></script>
 {% endblock %}

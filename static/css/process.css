@@ -1,0 +1,207 @@
+/* Horizontal Timeline Styles for Process Page */
+
+.process-timeline-wrapper {
+    position: relative;
+    padding: 100px 0;
+    margin-top: 50px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y pinch-zoom; /* Prevent horizontal scroll from trapping vertical scroll */
+}
+
+.process-timeline-wrapper::-webkit-scrollbar { display: none; }
+
+.h-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--primary), var(--accent), transparent);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.h-timeline {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1200px;
+    padding: 0 50px;
+    z-index: 2;
+    position: relative;
+    height: 450px; /* Fixed height to allow cards space above/below */
+    align-items: center; /* Crucial: Centers the items on the line */
+}
+
+.h-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    animation: h-slide-in 0.8s ease-out forwards;
+    animation-delay: var(--delay);
+    opacity: 0;
+}
+
+.h-point {
+    width: 20px;
+    height: 20px;
+    background: #0b1121; /* Background color of your site */
+    border: 4px solid var(--primary);
+    border-radius: 50%;
+    z-index: 5;
+    box-shadow: 0 0 15px var(--primary), 0 0 5px white;
+    position: relative;
+}
+
+.h-card {
+    position: absolute;
+    width: 240px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Alignment Fix: Cards are relative to the point */
+.up .h-card { 
+    bottom: 45px; 
+}
+
+.down .h-card { 
+    top: 45px; 
+}
+
+/* Vertical Connectors */
+.h-item::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    z-index: 1;
+}
+
+.up::before { 
+    height: 45px; 
+    bottom: 10px; 
+    background: linear-gradient(to top, var(--primary), transparent); 
+}
+
+.down::before { 
+    height: 45px; 
+    top: 10px; 
+    background: linear-gradient(to bottom, var(--primary), transparent); 
+}
+
+.h-card:hover {
+    transform: translateY(var(--hover-y)) scale(1.05);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(0, 242, 254, 0.2);
+}
+
+.up .h-card:hover { --hover-y: -10px; }
+.down .h-card:hover { --hover-y: 10px; }
+
+.h-icon { font-size: 2.2rem; margin-bottom: 12px; }
+.h-card h3 { font-size: 1.1rem; color: #fff; margin-bottom: 8px; font-weight: 700; }
+.h-card p { font-size: 0.85rem; color: #ccc; line-height: 1.5; }
+
+@keyframes h-slide-in {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Manifesto Section Styles */
+.manifesto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.party-link {
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-bottom: 5px solid var(--color);
+}
+
+.party-link:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Responsive Mobile Timeline */
+@media (max-width: 900px) {
+    .process-timeline-wrapper {
+        padding: 40px 0;
+        overflow: visible; /* Fix scroll freeze by allowing natural overflow */
+    }
+
+    .h-line {
+        left: 31px;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        transform: none;
+        background: linear-gradient(180deg, transparent, var(--primary), var(--accent), transparent);
+    }
+
+    .h-timeline {
+        flex-direction: column;
+        min-width: 100%;
+        padding: 0 20px;
+        height: auto;
+        gap: 120px;
+        align-items: flex-start;
+    }
+
+    .h-item {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 60px;
+        height: 100px;
+    }
+
+    .h-point {
+        position: absolute;
+        left: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .h-card {
+        position: relative;
+        top: 0 !important;
+        bottom: 0 !important;
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .h-item::before {
+        height: 2px !important;
+        width: 30px !important;
+        left: 22px !important;
+        top: 50% !important;
+        background: var(--primary) !important;
+    }
+
+    .up .h-card:hover, .down .h-card:hover {
+        transform: translateX(10px) scale(1.02);
+    }
+
+    .h-icon {
+        font-size: 1.8rem;
+    }
+}

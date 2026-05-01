@@ -1,64 +1,100 @@
 {% extends 'guide/base.html' %}
+{% load static %}
 
 {% block title %}Process{% endblock %}
 
 {% block content %}
-<div class="glassCard">
-    <h1>⚙️ Process</h1>
-    <p>Think of an election like choosing a captain for a team. Everyone gets a say, and the person with the most support gets to lead and make decisions for the group.</p>
+<link rel="stylesheet" href="{% static 'css/process.css' %}">
+
+<section class="hero glass-panel">
+    <h1>⚙️ The Election <span class="highlight">Process</span></h1>
+    <p>Think of an election like choosing a captain for a team. Everyone gets a say, and the person with the most support leads the group.</p>
+</section>
+
+<div class="process-timeline-wrapper">
+    <div class="h-line"></div>
     
-    <h2>1. Nominations (Raising Hands)</h2>
-    <p>First, people who want to be leaders step forward. They tell the public what they plan to do if they win.</p>
-
-    <h2>2. Campaigns (Sharing Ideas)</h2>
-    <p>The candidates travel around and talk to people. They use posters, TV, and rallies to share their promises.</p>
-
-    <h2>3. Voting (Your Turn)</h2>
-    <p>This is the most important part! On election day, you go to a booth and secretly choose your favorite candidate. Your choice is private.</p>
-
-    <h2>4. Counting (Tallying Up)</h2>
-    <p>After everyone finishes, officials count all the votes carefully. It's like adding up points in a game.</p>
-
-    <h2>5. Results (The New Leader)</h2>
-    <p>The person who gets the most votes wins! They become the new leader and start working on their promises.</p>
-
-    <div class="manifesto-section" style="margin-top: 40px; background: rgba(255, 255, 255, 0.05); padding: 25px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
-        <h2 style="margin-top: 0;">📜 Party Manifestos</h2>
-        <p>A manifesto is a document where a political party lists all the promises they will fulfill if they win. Click on any party to visit their official website and read their manifesto directly from their platform:</p>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px;">
-            <!-- BJP -->
-            <div style="padding: 15px; border-radius: 10px; background: rgba(255, 153, 51, 0.05); border: 1px solid rgba(255, 153, 51, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                <h3 style="color: #ff9933; margin-bottom: 15px; font-size: 1.2rem;">Bharatiya Janata Party (BJP)</h3>
-                <a href="https://www.bjp.org" target="_blank" style="display: block; margin-bottom: 8px; color: var(--text-color); text-decoration: none;">🌐 Official Website</a>
-                <a href="https://www.bjp.org/manifesto" target="_blank" style="display: block; color: var(--text-color); text-decoration: none;">📖 Read Manifesto</a>
+    <div class="h-timeline">
+        <!-- Step 1: Up -->
+        <div class="h-item up" style="--delay: 0s">
+            <div class="h-card glass-panel">
+                <div class="h-icon">🗳️</div>
+                <h3>1. Nominations</h3>
+                <p>Candidates officially step forward and announce their intent to lead the people.</p>
             </div>
-            
-            <!-- INC -->
-            <div style="padding: 15px; border-radius: 10px; background: rgba(0, 153, 255, 0.05); border: 1px solid rgba(0, 153, 255, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                <h3 style="color: #0099ff; margin-bottom: 15px; font-size: 1.2rem;">Indian National Congress (INC)</h3>
-                <a href="https://inc.in" target="_blank" style="display: block; margin-bottom: 8px; color: var(--text-color); text-decoration: none;">🌐 Official Website</a>
-                <a href="https://manifesto.inc.in" target="_blank" style="display: block; color: var(--text-color); text-decoration: none;">📖 Read Manifesto</a>
-            </div>
+            <div class="h-point"></div>
+        </div>
 
-            <!-- AAP -->
-            <div style="padding: 15px; border-radius: 10px; background: rgba(0, 204, 102, 0.05); border: 1px solid rgba(0, 204, 102, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                <h3 style="color: #00cc66; margin-bottom: 15px; font-size: 1.2rem;">Aam Aadmi Party (AAP)</h3>
-                <a href="https://aamaadmiparty.org" target="_blank" style="display: block; margin-bottom: 8px; color: var(--text-color); text-decoration: none;">🌐 Official Website</a>
-                <a href="https://aamaadmiparty.org/manifesto" target="_blank" style="display: block; color: var(--text-color); text-decoration: none;">📖 Read Manifesto</a>
-            </div>
-
-            <!-- CPI(M) -->
-            <div style="padding: 15px; border-radius: 10px; background: rgba(255, 51, 51, 0.05); border: 1px solid rgba(255, 51, 51, 0.3); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-                <h3 style="color: #ff3333; margin-bottom: 15px; font-size: 1.2rem;">Communist Party of India (Marxist)</h3>
-                <a href="https://cpim.org" target="_blank" style="display: block; margin-bottom: 8px; color: var(--text-color); text-decoration: none;">🌐 Official Website</a>
-                <a href="https://cpim.org/manifestos" target="_blank" style="display: block; color: var(--text-color); text-decoration: none;">📖 Read Manifesto</a>
+        <!-- Step 2: Down -->
+        <div class="h-item down" style="--delay: 0.2s">
+            <div class="h-point"></div>
+            <div class="h-card glass-panel">
+                <div class="h-icon">📢</div>
+                <h3>2. Campaigns</h3>
+                <p>Candidates share their ideas and promises through rallies, posters, and speeches.</p>
             </div>
         </div>
-    </div>
 
-    <div style="text-align: center; margin-top: 30px;">
-        <a href="{% url 'timeline' %}" class="actionBtn">Next: See The Timeline ➔</a>
+        <!-- Step 3: Up -->
+        <div class="h-item up" style="--delay: 0.4s">
+            <div class="h-card glass-panel">
+                <div class="h-icon">☝️</div>
+                <h3>3. Voting</h3>
+                <p>The most important day! Citizens cast their secret vote at local polling booths.</p>
+            </div>
+            <div class="h-point"></div>
+        </div>
+
+        <!-- Step 4: Down -->
+        <div class="h-item down" style="--delay: 0.6s">
+            <div class="h-point"></div>
+            <div class="h-card glass-panel">
+                <div class="h-icon">📊</div>
+                <h3>4. Counting</h3>
+                <p>Votes are carefully tallied under security to ensure every single voice is heard.</p>
+            </div>
+        </div>
+
+        <!-- Step 5: Up -->
+        <div class="h-item up" style="--delay: 0.8s">
+            <div class="h-card glass-panel">
+                <div class="h-icon">🏆</div>
+                <h3>5. Results</h3>
+                <p>The winner is announced, and the new leader begins fulfilling their promises.</p>
+            </div>
+            <div class="h-point"></div>
+        </div>
     </div>
+</div>
+
+<!-- Manifesto Section (Redesigned) -->
+<section class="content-section" style="margin-top: 50px;">
+    <div class="glass-panel" style="padding: 2.5rem;">
+        <h2 style="margin-bottom: 1rem; color: var(--text-main);">📜 Party Manifestos</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">A manifesto is a document where parties list their promises. Click to read their official platforms:</p>
+        
+        <div class="manifesto-grid">
+            <a href="https://www.bjp.org/manifesto" target="_blank" class="party-link" style="--color: #ff9933;">
+                <h3>BJP</h3>
+                <span>View Manifesto</span>
+            </a>
+            <a href="https://manifesto.inc.in" target="_blank" class="party-link" style="--color: #0099ff;">
+                <h3>INC</h3>
+                <span>View Manifesto</span>
+            </a>
+            <a href="https://aamaadmiparty.org/manifesto" target="_blank" class="party-link" style="--color: #00cc66;">
+                <h3>AAP</h3>
+                <span>View Manifesto</span>
+            </a>
+            <a href="https://cpim.org/manifestos" target="_blank" class="party-link" style="--color: #ff3333;">
+                <h3>CPI(M)</h3>
+                <span>View Manifesto</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
+    <a href="{% url 'timeline' %}" class="actionBtn">Next: See The Timeline ➔</a>
 </div>
 {% endblock %}

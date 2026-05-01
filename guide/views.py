@@ -20,7 +20,46 @@ def process(request):
     return render(request, 'guide/process.html', {'geminiApiKey': GEMINI_API_KEY})
 
 def timeline(request):
-    return render(request, 'guide/timeline.html', {'geminiApiKey': GEMINI_API_KEY})
+    from .models import TimelineEvent
+    events = TimelineEvent.objects.all().order_by('order')
+    
+    if not events.exists():
+        try:
+            prompt = (
+                "Provide a detailed timeline for the current or upcoming general election in India (2024 or later). "
+                "If no election is in the next 6 months, provide the timeline for the most recent one. "
+                "Include phases like: Announcement, Filing Nominations, Polling, and Results. "
+                "Return the response ONLY as a JSON array of objects with keys: 'title', 'date', 'description', 'is_upcoming' (boolean), and 'order' (integer). "
+                "No other text or markdown."
+            )
+            genai.configure(api_key=GEMINI_API_KEY)
+            model = genai.GenerativeModel('gemini-flash-latest')
+            response = model.generate_content(prompt)
+            
+            raw_text = response.text.strip()
+            if "```json" in raw_text:
+                raw_text = raw_text.split("```json")[1].split("```")[0].strip()
+            elif "```" in raw_text:
+                raw_text = raw_text.split("```")[1].split("```")[0].strip()
+                
+            events_data = json.loads(raw_text)
+            for item in events_data:
+                TimelineEvent.objects.create(
+                    title=item['title'],
+                    date=item['date'],
+                    description=item['description'],
+                    is_upcoming=item.get('is_upcoming', False),
+                    order=item.get('order', 0)
+                )
+            events = TimelineEvent.objects.all().order_by('order')
+        except Exception as e:
+            print(f"Timeline AI Error: {e}")
+            # Return empty or dummy list if needed
+
+    return render(request, 'guide/timeline.html', {
+        'events': events, 
+        'geminiApiKey': GEMINI_API_KEY
+    })
 
 def steps(request):
     return render(request, 'guide/steps.html', {'geminiApiKey': GEMINI_API_KEY})
@@ -46,7 +85,10 @@ def api_constituencies(request):
         
     try:
         district = District.objects.get(id=district_id)
-        constituencies = Constituency.objects.filter(district_id=district_id).order_by('name')
+        state_name = district.state.name.strip()
+        district_name = district.name.strip()
+        
+        constituencies = Constituency.objects.filter(district=district).order_by('name')
         data = list(constituencies.values('id', 'name', 'constituency_type', 'representative', 'party'))
         
         if not data:
@@ -96,8 +138,8 @@ def api_constituencies(request):
         print(f"Error in api_constituencies: {e}")
         return JsonResponse([], safe=False)
 def api_ai_constituency(request):
-    state_name = request.GET.get('state')
-    district_name = request.GET.get('district')
+    state_name = request.GET.get('state', '').strip()
+    district_name = request.GET.get('district', '').strip()
     
     if not state_name or not district_name:
         return JsonResponse({'error': 'State and District are required'}, status=400)
@@ -164,3 +206,23 @@ def api_ai_constituency(request):
     except Exception as e:
         print(f"Error in api_ai_constituency: {e}")
         return JsonResponse({'error': str(e)}, status=500)
+
+def chat(request):
+    user_message = request.GET.get('message')
+    if not user_message:
+        return JsonResponse({'reply': "I didn't catch that. Could you repeat?"})
+        
+    try:
+        prompt = (
+            "You are a helpful election assistant for Election Buddy. "
+            "Explain election concepts simply to someone with no technical background. "
+            "Be encouraging and concise. "
+            f"User asks: {user_message}"
+        )
+        genai.configure(api_key=GEMINI_API_KEY)
+        model = genai.GenerativeModel('gemini-flash-latest')
+        response = model.generate_content(prompt)
+        return JsonResponse({'reply': response.text})
+    except Exception as e:
+        print(f"Chat AI Error: {e}")
+        return JsonResponse({'reply': "Sorry, my brain is a bit foggy right now. Please try again later!"})

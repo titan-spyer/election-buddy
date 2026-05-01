@@ -4,6 +4,8 @@
 {% block title %}Find Your Constituency{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/constituency.css' %}">
+
 <section class="hero glass-panel">
     <h1>Find Your <span class="highlight">Constituency</span></h1>
     <p>Select your state and district to view information about your current representatives.</p>
@@ -12,10 +14,10 @@
 <section class="content-section">
     <div class="constituency-container">
         <!-- Left Side: Selection -->
-        <div class="selection-panel glass-panel" style="padding: 2rem; border-radius: 20px;">
-            <div class="form-group" style="margin-bottom: 2rem;">
-                <label for="stateSelect" style="display: block; margin-bottom: 0.8rem; font-weight: bold; color: var(--text-main); font-size: 0.9rem;">Select State</label>
-                <select id="stateSelect" class="chatInput" style="width: 100%; cursor: pointer;">
+        <div class="selection-panel">
+            <div class="form-group">
+                <label for="stateSelect" class="selection-label">Select State</label>
+                <select id="stateSelect" class="chatInput constituency-select">
                     <option value="">-- Choose State --</option>
                     {% for state in states %}
                     <option value="{{ state.id }}">{{ state.name }}</option>
@@ -23,9 +25,9 @@
                 </select>
             </div>
 
-            <div class="form-group" style="margin-bottom: 1rem;">
-                <label for="districtSelect" style="display: block; margin-bottom: 0.8rem; font-weight: bold; color: var(--text-main); font-size: 0.9rem;">Select District</label>
-                <select id="districtSelect" class="chatInput" style="width: 100%; cursor: pointer;" disabled>
+            <div class="form-group">
+                <label for="districtSelect" class="selection-label">Select District</label>
+                <select id="districtSelect" class="chatInput constituency-select" disabled>
                     <option value="">-- Choose District --</option>
                 </select>
             </div>
@@ -33,125 +35,22 @@
 
         <!-- Right Side: Map & Results -->
         <div class="results-panel">
-            <div id="googleMapContainer" style="display: none; margin-top: 0;">
+            <div id="googleMapContainer" style="display: none;">
                 <iframe id="googleMap" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen loading="lazy"></iframe>
             </div>
 
             <div id="resultsArea" style="display: none;">
-                <h3 style="margin-bottom: 1.5rem; color: var(--text-main); display: flex; align-items: center; gap: 10px;">
-                    <span style="width: 4px; height: 24px; background: var(--primary); border-radius: 2px;"></span>
+                <h3 class="results-header">
+                    <span class="results-indicator"></span>
                     Constituencies in this District
                 </h3>
                 <div id="constituencyList" class="constituency-grid">
-                    <!-- Cards injected here -->
+                    <!-- Cards injected here via constituency.js -->
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const stateSelect = document.getElementById('stateSelect');
-        const districtSelect = document.getElementById('districtSelect');
-        const resultsArea = document.getElementById('resultsArea');
-        const constituencyList = document.getElementById('constituencyList');
-        const mapContainer = document.getElementById('googleMapContainer');
-
-        stateSelect.addEventListener('change', async function() {
-            const stateId = this.value;
-            districtSelect.innerHTML = '<option value="">-- Choose District --</option>';
-            districtSelect.disabled = true;
-            resultsArea.style.display = 'none';
-            mapContainer.style.display = 'none';
-
-            if (!stateId) return;
-
-            try {
-                const response = await fetch(`/api/districts/?state_id=${stateId}`);
-                const data = await response.json();
-
-                if (data.length > 0) {
-                    data.forEach(district => {
-                        const option = document.createElement('option');
-                        option.value = district.id;
-                        option.textContent = district.name;
-                        districtSelect.appendChild(option);
-                    });
-                    districtSelect.disabled = false;
-                }
-            } catch (error) {
-                console.error('Error fetching districts:', error);
-            }
-        });
-
-        districtSelect.addEventListener('change', async function() {
-            const districtId = this.value;
-            constituencyList.innerHTML = '<p style="color: var(--accent-cyan); font-style: italic; grid-column: 1/-1;">\uD83D\uDD0D Searching for constituencies and representatives...</p>';
-            resultsArea.style.display = 'block';
-            mapContainer.style.display = 'none';
-
-            if (!districtId) return;
-
-            try {
-                const response = await fetch(`/api/constituencies/?district_id=${districtId}`);
-                const data = await response.json();
-
-                constituencyList.innerHTML = ''; 
-                if (data.length > 0) {
-                    data.forEach(constituency => {
-                        const card = document.createElement('div');
-                        card.className = 'constituency-card';
-                        
-                        const typeClass = constituency.constituency_type === 'Assembly' ? 'type-assembly' : 'type-parliamentary';
-                        
-                        let cardHtml = `
-                            <div class="c-type ${typeClass}">${constituency.constituency_type}</div>
-                            <div class="c-name">${constituency.name}</div>
-                        `;
-
-                        if (constituency.representative) {
-                            cardHtml += `
-                                <div class="c-info-label">Current ${constituency.constituency_type === 'Assembly' ? 'MLA' : 'MP'}</div>
-                                <div class="c-rep">${constituency.representative}</div>
-                            `;
-                        }
-
-                        if (constituency.party) {
-                            cardHtml += `
-                                <div class="c-info-label">Party</div>
-                                <div class="c-party">${constituency.party}</div>
-                            `;
-                        }
-
-                        if (constituency.is_ai) {
-                            cardHtml += `
-                                <div class="ai-badge">✨ AI Generated Information</div>
-                            `;
-                            card.style.borderColor = 'rgba(255, 0, 255, 0.3)';
-                        }
-
-                        card.innerHTML = cardHtml;
-                        constituencyList.appendChild(card);
-                    });
-                    resultsArea.style.display = 'block';
-                    
-                    // Update Google Map
-                    const districtText = districtSelect.options[districtSelect.selectedIndex].text;
-                    const stateText = stateSelect.options[stateSelect.selectedIndex].text;
-                    const query = encodeURIComponent(`${districtText}, ${stateText}, India`);
-                    document.getElementById('googleMap').src = `https://maps.google.com/maps?q=${query}&t=&z=10&ie=UTF8&iwloc=&output=embed`;
-                    mapContainer.style.display = 'block';
-
-                } else {
-                    constituencyList.innerHTML = '<p style="color: var(--text-color); grid-column: 1/-1;">No constituencies found for this district.</p>';
-                    resultsArea.style.display = 'block';
-                }
-            } catch (error) {
-                console.error('Error fetching constituencies:', error);
-                constituencyList.innerHTML = '<p style="color: #ef4444; grid-column: 1/-1;">Error loading data. Please try again.</p>';
-            }
-        });
-    });
-</script>
+<script src="{% static 'js/constituency.js' %}"></script>
 {% endblock %}

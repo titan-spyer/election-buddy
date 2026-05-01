@@ -1,13 +1,17 @@
 {% extends 'guide/base.html' %}
+{% load static %}
 
 {% block title %}Step-by-Step Guide{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/steps.css' %}">
+
 <div class="glassCard">
     <h1>👣 How to Vote (Step-by-Step)</h1>
     <p style="text-align: center;">Follow these simple steps on Election Day to make your voice heard!</p>
 
     <div class="stepGrid" style="margin-top: 30px;">
+        <!-- ... existing steps ... -->
         <div class="glassCard stepCard" style="margin-bottom: 0;">
             <div class="stepNumber">1</div>
             <h2>Bring ID</h2>
@@ -33,8 +37,93 @@
         </div>
     </div>
 
-    <div style="text-align: center; margin-top: 40px;">
+    <div style="text-align: center; margin-top: 60px; margin-bottom: 40px;">
+        <h2 style="font-size: 2rem; color: var(--primary);">Interactive EVM Simulator</h2>
+        <p style="color: var(--text-muted);">Experience how to cast your vote on the machine.</p>
+    </div>
+
+    <!-- EVM Simulator -->
+    <div class="evm-wrapper">
+        <!-- Ballot Unit -->
+        <div class="ballot-unit">
+            <div class="bu-header">
+                <div class="eci-logo">🗳️</div>
+                <span>Election Commission of India</span>
+            </div>
+            <div class="candidate-list">
+                <!-- Candidate rows same as before -->
+                <div class="candidate-row" onclick="castVote(1, 'Lotus', '🪷')">
+                    <div class="c-num">1</div>
+                    <div class="c-name">Party A</div>
+                    <div class="c-symbol">🪷</div>
+                    <div class="c-action">
+                        <div class="led" id="led-1"></div>
+                        <button class="vote-btn"></button>
+                    </div>
+                </div>
+                <div class="candidate-row" onclick="castVote(2, 'Hand', '✋')">
+                    <div class="c-num">2</div>
+                    <div class="c-name">Party B</div>
+                    <div class="c-symbol">✋</div>
+                    <div class="c-action">
+                        <div class="led" id="led-2"></div>
+                        <button class="vote-btn"></button>
+                    </div>
+                </div>
+                <div class="candidate-row" onclick="castVote(3, 'Broom', '🧹')">
+                    <div class="c-num">3</div>
+                    <div class="c-name">Party C</div>
+                    <div class="c-symbol">🧹</div>
+                    <div class="c-action">
+                        <div class="led" id="led-3"></div>
+                        <button class="vote-btn"></button>
+                    </div>
+                </div>
+                <div class="candidate-row" onclick="castVote(4, 'Cycle', '🚲')">
+                    <div class="c-num">4</div>
+                    <div class="c-name">Party D</div>
+                    <div class="c-symbol">🚲</div>
+                    <div class="c-action">
+                        <div class="led" id="led-4"></div>
+                        <button class="vote-btn"></button>
+                    </div>
+                </div>
+                <div class="candidate-row" onclick="castVote(5, 'NOTA', '🚫')">
+                    <div class="c-num">5</div>
+                    <div class="c-name">NOTA</div>
+                    <div class="c-symbol">🚫</div>
+                    <div class="c-action">
+                        <div class="led" id="led-5"></div>
+                        <button class="vote-btn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VVPAT Unit -->
+        <div class="vvpat-unit">
+            <div class="vvpat-window">
+                <div id="vvpat-slip" class="vvpat-slip">
+                    <div class="slip-num" id="slip-num"></div>
+                    <div class="slip-symbol" id="slip-symbol"></div>
+                    <div class="slip-name" id="slip-name"></div>
+                </div>
+            </div>
+            <div class="vvpat-label">VVPAT</div>
+            <div class="beep-indicator" id="beep-msg">BEEP!</div>
+        </div>
+    </div>
+
+    <div id="vote-success" style="display: none; text-align: center; margin-top: 30px; animation: fadeIn 0.5s;">
+        <h3 style="color: #00cc66;">✅ Vote Cast Successfully!</h3>
+        <p style="color: var(--text-muted);">Thank you for participating in democracy.</p>
+        <button onclick="resetEVM()" class="actionBtn" style="background: var(--glass-bg); margin-top: 15px;">Reset Machine</button>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px;">
         <a href="{% url 'index' %}" class="actionBtn">Back to Home</a>
     </div>
 </div>
+
+<script src="{% static 'js/steps.js' %}"></script>
 {% endblock %}

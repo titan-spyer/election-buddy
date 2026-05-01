@@ -3,36 +3,39 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="glassCard" style="text-align: center; margin-bottom: 40px;">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+<div class="glassCard hero-welcome">
     <h1>Welcome to Election Buddy</h1>
     <p>Your friendly guide to understanding how elections work. We believe everyone has a right to know how to choose their leaders easily.</p>
 </div>
 
 <!-- New Representatives Section -->
-<section id="repSection" style="margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
-    <div id="repDisplay" style="display: none; margin-bottom: 30px; animation: slideUp 0.5s ease-out;">
+<section id="repSection" class="rep-lookup-section">
+    <div id="repDisplay" class="rep-display-area">
         <!-- Card will be injected here -->
     </div>
 
-    <div class="glassCard" style="border: 1px solid var(--primary); padding: 2rem; text-align: center;">
-        <h2 style="margin-bottom: 10px; font-size: 1.5rem;">Who are your representatives?</h2>
-        <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.95rem;">Select your location to see your current MP and MLA.</p>
+    <div class="glassCard rep-input-card">
+        <h2>Who are your representatives?</h2>
+        <p>Select your location to see your current MP and MLA.</p>
         
-        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-            <select id="stateSelectHome" class="chatInput" style="flex: 1; min-width: 200px;">
+        <div class="rep-select-group">
+            <select id="stateSelectHome" class="chatInput rep-select">
                 <option value="">Select State</option>
                 {% for state in states %}
                 <option value="{{ state.id }}">{{ state.name }}</option>
                 {% endfor %}
             </select>
-            <select id="districtSelectHome" class="chatInput" style="flex: 1; min-width: 200px;" disabled>
+            <select id="districtSelectHome" class="chatInput rep-select" disabled>
                 <option value="">Select District</option>
             </select>
         </div>
     </div>
 </section>
 
-<div class="stepGrid" style="max-width: 800px;">
+<div class="stepGrid" style="max-width: 800px; margin: 0 auto;">
     <div class="glassCard stepCard">
         <h2>🗳️ The Process</h2>
         <p>Understand the core mechanics of how votes become voices.</p>
@@ -55,83 +58,5 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const stateSelect = document.getElementById('stateSelectHome');
-        const districtSelect = document.getElementById('districtSelectHome');
-        const repDisplay = document.getElementById('repDisplay');
-
-        stateSelect.addEventListener('change', async function() {
-            const stateId = this.value;
-            districtSelect.innerHTML = '<option value="">Select District</option>';
-            districtSelect.disabled = true;
-            if (!stateId) return;
-
-            try {
-                const response = await fetch(`/api/districts/?state_id=${stateId}`);
-                const data = await response.json();
-                data.forEach(d => {
-                    const opt = document.createElement('option');
-                    opt.value = d.id;
-                    opt.textContent = d.name;
-                    districtSelect.appendChild(opt);
-                });
-                districtSelect.disabled = false;
-            } catch (e) { console.error(e); }
-        });
-
-        districtSelect.addEventListener('change', async function() {
-            const stateText = stateSelect.options[stateSelect.selectedIndex].text;
-            const districtText = districtSelect.options[districtSelect.selectedIndex].text;
-            
-            repDisplay.style.display = 'block';
-            repDisplay.innerHTML = `
-                <div class="glassCard" style="text-align: center; padding: 2rem; border: 1px dashed var(--primary);">
-                    <div class="loading-pulse" style="color: var(--accent-cyan); font-weight: 600;">🔍 Identifying your representatives via AI engine...</div>
-                </div>
-            `;
-            
-            // Scroll to the display area
-            repDisplay.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            
-            try {
-                const response = await fetch(`/api/ai-constituency/?state=${encodeURIComponent(stateText)}&district=${encodeURIComponent(districtText)}`);
-                const data = await response.json();
-                
-                if (data.error) throw new Error(data.error);
-
-                repDisplay.innerHTML = `
-                    <div class="glassCard" style="background: linear-gradient(135deg, rgba(0, 242, 254, 0.08), rgba(161, 74, 245, 0.08)); border: 2px solid var(--primary); padding: 2rem; position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 0; right: 0; background: var(--primary); color: black; padding: 5px 15px; font-size: 0.6rem; font-weight: 900; text-transform: uppercase; border-bottom-left-radius: 10px;">Live Data</div>
-                        
-                        <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-main); font-size: 1.4rem;">Your Local Representatives</h3>
-                        
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                            <!-- MLA Card -->
-                            <div class="glassCard" style="padding: 1.5rem; background: rgba(0, 0, 0, 0.2); border-left: 4px solid var(--primary); text-align: left;">
-                                <span style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); font-weight: 800;">MLA (Assembly)</span>
-                                <div style="font-size: 1.25rem; font-weight: 700; margin: 10px 0; color: var(--text-main);">${data.mla_name}</div>
-                                <div style="font-size: 0.9rem; color: var(--accent-cyan); font-weight: 600;">${data.mla_party}</div>
-                                <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 12px; font-style: italic;">Constituency: ${data.assembly_constituency}</div>
-                            </div>
-                            
-                            <!-- MP Card -->
-                            <div class="glassCard" style="padding: 1.5rem; background: rgba(0, 0, 0, 0.2); border-left: 4px solid var(--accent); text-align: left;">
-                                <span style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); font-weight: 800;">MP (Parliament)</span>
-                                <div style="font-size: 1.25rem; font-weight: 700; margin: 10px 0; color: var(--text-main);">${data.mp_name}</div>
-                                <div style="font-size: 0.9rem; color: var(--accent-cyan); font-weight: 600;">${data.mp_party}</div>
-                                <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 12px; font-style: italic;">Constituency: ${data.parliamentary_constituency}</div>
-                            </div>
-                        </div>
-                        
-                        <div style="text-align: center; margin-top: 1.5rem; font-size: 0.6rem; color: #ff00ff; text-transform: uppercase; letter-spacing: 2px; font-weight: 800;">✨ Powered by Gemini Flash Engine</div>
-                    </div>
-                `;
-            } catch (e) {
-                console.error(e);
-                repDisplay.innerHTML = '<div class="glassCard" style="color: #ef4444; text-align: center; border-color: #ef4444;">Sorry, we couldn\'t identify your representatives right now. Please try again.</div>';
-            }
-        });
-    });
-</script>
+<script src="{% static 'js/index.js' %}"></script>
 {% endblock %}

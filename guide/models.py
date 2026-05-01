@@ -30,3 +30,17 @@ class Constituency(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.district.name})"
+
+class TimelineEvent(models.Model):
+    title = models.CharField(max_length=200)
+    date = models.CharField(max_length=100)
+    description = models.TextField()
+    is_upcoming = models.BooleanField(default=False)
+    order = models.IntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['order', 'created_at']
+
+    def __str__(self):
+        return f"{self.title} ({self.date})"
