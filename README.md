@@ -6,6 +6,36 @@
 
 ---
 
+## 🏛️ Project Context
+
+### 🎯 Chosen Vertical
+**Civic Education & Democratic Engagement.**  
+Election Buddy targets the information gap in the democratic process, specifically aiming to empower first-time voters and citizens with limited technical knowledge by making election data accessible and engaging.
+
+### 🧠 Approach and Logic
+- **User-Centric Design**: Utilizing a "Glassmorphism" aesthetic to create a modern, non-intimidating interface that feels like a premium consumer app rather than a dry government portal.
+- **Hybrid Data Strategy**: A "Database-First, AI-Fallback" logic. The system first checks a verified local database for constituency and representative data. If unavailable, it dynamically queries the **Gemini AI API** to provide real-time information, which is then cached for future users.
+- **Simulated Learning**: Instead of just reading text, users *learn by doing* through the interactive EVM simulator, which reduces anxiety about the actual voting day.
+
+### ⚙️ How the Solution Works
+1. **Entry**: The user arrives at the dashboard and is presented with high-level navigation: Process, Timeline, Steps, or Lookup.
+2. **Interaction**:
+   - **Static Content**: Pages like "The Process" serve structured educational content.
+   - **Dynamic AI Content**: The "Timeline" and "Constituency Lookup" trigger backend logic that interfaces with Google Gemini to fetch and structure data into JSON for the frontend.
+   - **Stateful Simulator**: The EVM simulator uses client-side JavaScript to maintain the state of the "ballot" and "VVPAT" units without requiring a server refresh.
+3. **Assistance**: The Gemini AI Chatbot is globally available, using a custom system prompt to remain in "Election Assistant" mode across all pages.
+
+### 📝 Assumptions Made
+- **Connectivity**: A stable internet connection is assumed for real-time AI lookups and chatbot functionality.
+- **Data Accuracy**: AI-generated representative data is assumed to be the most current available to the model, though users are advised to verify with official sources.
+- **Environment**: The solution assumes a containerized environment (Docker) for consistent deployment across local and cloud (Cloud Run) environments.
+- **Browser Support**: Assumes a modern browser capable of rendering CSS variables and Flexbox/Grid for the responsive UI.
+
+---
+
+
+---
+
 ## 🌟 Key Features
 
 ### 1. ⚙️ The Election Engine (Process)
