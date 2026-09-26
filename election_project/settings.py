@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'default-insecure-key-replace-in-produ
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+DEBUG = os.environ.get('DEBUG', 'False').lower() in ('true', '1', 't')
 
 ALLOWED_HOSTS = ['*'] # In production, set this to your Cloud Run URL
 
@@ -94,10 +94,13 @@ DATABASES = {
 
 # Link to external Postgres DB if DATABASE_URL is present
 if os.environ.get('DATABASE_URL'):
+    db_url = os.environ.get('DATABASE_URL')
+    ssl_req = 'supabase' in db_url or os.environ.get('DATABASE_SSL_REQUIRE', 'False').lower() in ('true', '1', 't')
     DATABASES['default'] = dj_database_url.config(
-        default=os.environ.get('DATABASE_URL'),
+        default=db_url,
         conn_max_age=600,
         conn_health_checks=True,
+        ssl_require=ssl_req,
     )
 
 
@@ -140,6 +143,17 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# Enable WhiteNoise to compress and cache static files
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Enable WhiteNoise to compress and cache static files safely
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+    },
+}
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+WHITENOISE_MANIFEST_STRICT = False
+
 

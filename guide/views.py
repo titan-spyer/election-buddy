@@ -9,7 +9,11 @@ import json
 GEMINI_API_KEY = settings.GEMINI_API_KEY
 
 def index(request):
-    states = State.objects.all().order_by('name')
+    try:
+        states = State.objects.all().order_by('name')
+    except Exception as e:
+        print(f"Error fetching states in index: {e}")
+        states = []
     return render(request, 'guide/index.html', {
         'states': states,
         'geminiApiKey': GEMINI_API_KEY
@@ -65,7 +69,11 @@ def steps(request):
     return render(request, 'guide/steps.html', {'geminiApiKey': GEMINI_API_KEY})
 
 def constituency_lookup(request):
-    states = State.objects.all().order_by('name')
+    try:
+        states = State.objects.all().order_by('name')
+    except Exception as e:
+        print(f"Error fetching states in constituency_lookup: {e}")
+        states = []
     return render(request, 'guide/constituency.html', {
         'states': states,
         'geminiApiKey': GEMINI_API_KEY
@@ -75,8 +83,12 @@ def api_districts(request):
     state_id = request.GET.get('state_id')
     if not state_id:
         return JsonResponse([])
-    districts = District.objects.filter(state_id=state_id).order_by('name')
-    return JsonResponse(list(districts.values('id', 'name')), safe=False)
+    try:
+        districts = District.objects.filter(state_id=state_id).order_by('name')
+        return JsonResponse(list(districts.values('id', 'name')), safe=False)
+    except Exception as e:
+        print(f"Error in api_districts: {e}")
+        return JsonResponse([], safe=False)
 
 def api_constituencies(request):
     district_id = request.GET.get('district_id')
