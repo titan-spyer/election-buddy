@@ -2,7 +2,7 @@
 
 **Election Buddy** is a modern, responsive, and AI-powered web platform designed to educate citizens about the election process in India. It simplifies complex democratic procedures using interactive tools, AI-driven insights, and a premium glassmorphism user interface.
 
-🚀 **Live Demo:** [https://election-buddy-362800866431.asia-south1.run.app](https://election-buddy-362800866431.asia-south1.run.app)
+🚀 **Live Demo:** [https://election-buddy-onrender.com](https://election-buddy-s35f.onrender.com)
 
 ---
 
